@@ -1,5 +1,1618 @@
-<html>
-<body>
-	<p>Hello World!</p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <meta content="collection of dridex 4 config files" name="description" />
+    <link href="https://fonts.googleapis.com/css?family=Neuton|Open+Sans:400,400i,700,700i" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/dridextracker.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link hsrc="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" rel="stylesheet" />
+    <title>Dridex v4 - Configuration Files, Network and Binaries </title>
+  </head>
+  <body id="top">
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top text-uppercase navbar-dark bg-dark" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#top">Dridex Loot</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-righ text-uppercase bg-primary text-white" data-target="#navbarResponsive" data-toggle="collapse" type="button">Menu
+          i.fa.fa-bars</button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#configs"> Configs</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#network">Network </a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#modules"> Modules</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#rules"> Rules </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron" id="intro">
+      <div class="container">
+        <h1>
+          What is this Website?
+        </h1>
+        <p>
+          This website lists configuration files, supernodes and modules of the <strong>Dridex v4</strong> malware. The collection includes data from these 1 botnets:
+          <ul>
+            <li>
+              23005
+            </li>
+          </ul>
+          Some of the information is also available as Suricata rules, Yara rules and CSV lists, see <a href="#rules">Rules</a>. The displayed information does have the aspiration to completeness, actuality, or quality. Use the information at your own discretion.
+        </p>
+      </div>
+    </div>
+    <section id="configs">
+      <div class="container">
+        <h1>
+          Configs
+        </h1>
+        <p>
+          Dridex is configured with configuration files. These files specify, among other things, which website urls should be redirected and where. The targets of the redirects are also listed in section <a href="#modules">redirects</a>. Now and then, the config files also deliver new <em>supernodes</em>. Those are separately listed in the <a href="#supernodes">supernodes</a> section.
+        </p>
+        <p>
+          The configuration files can also deliver executables. Those are listed in section <a href="#modules">modules</a>. The <em>modules</em> blocks originally contained full binaries. I replaced them with hashes. All modules in Dridex are identified by crc32 checksums, when known, the "name" matching the CRC32 is also listed. Neither the hashes, nor name are part of the config delivered by Dridex.
+        </p>
+        <p>
+          In version 3 of Dridex, the configuration files where delivered in XML format with descriptive tag and attribute names. In the current version 4, the configuration is delivered in a binary format without the helpful textual hints as to what the fields do. I tried to replicate the format from v3 as good as possible, but not all fields might be named appropriately.
+        </p>
+        <p>
+          Only config files from the last 31 days are shown.
+        </p>
+        <div class="table-responsive">
+          <table class="mdttable table table-sm">
+            <thead>
+              <tr>
+                <th>
+                  timestamp
+                </th>
+                <th>
+                  botnet
+                </th>
+                <th>
+                  view 
+                </th>
+              </tr>
+            </thead>
+            <hbody>
+              <tr>
+                <td>
+                  2018-03-18 21:20:21
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180318T212021.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-18 21:10:20
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180318T211020.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-17 17:40:24
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180317T174024.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-17 17:00:25
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180317T170025.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-14 15:10:37
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180314T151037.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-13 09:19:22
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180313T091922.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-12 11:50:19
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180312T115019.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 15:30:21
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180311T153021.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-10 18:20:22
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180310T182022.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-10 18:10:36
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180310T181036.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-07 09:33:38
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180307T093338.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-28 19:10:25
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180228T191025.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-28 18:10:22
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180228T181022.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-25 21:40:19
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180225T214019.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-25 20:50:20
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180225T205020.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-25 19:30:21
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180225T193021.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-22 23:20:25
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180222T232025.xml" role="button">show </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-22 23:10:27
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="./files/20180222T231027.xml" role="button">show </a>
+                </td>
+              </tr>
+            </hbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="network">
+      <div class="container">
+        <h1>
+          Network
+        </h1>
+        <h2 id="redirects">
+          Redirect Servers
+        </h2>
+        <p>
+          Traffic to the targeted websites is redirected to servers controlled by the Dridex operators. The following table shows servers from the config files of the last 31 days. 
+        </p>
+        <div class="table-responsive">
+          <table class="mdttable table table-sm">
+            <thead>
+              <tr>
+                <th>
+                  ip 
+                </th>
+                <th>
+                  port
+                </th>
+                <th>
+                  botnet
+                </th>
+                <th>
+                  added 
+                </th>
+                <th>
+                  removed
+                </th>
+                <th>
+                  firstseen 
+                </th>
+                <th>
+                  lastseen 
+                </th>
+              </tr>
+            </thead>
+            <hbody>
+              <tr>
+                <td>
+                  178.62.140.5
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-23 00:10:27
+                </td>
+                <td>
+                  2018-03-18 21:20:21 
+                </td>
+                <td>
+                  2018-02-23 00:10:27
+                </td>
+                <td>
+                  2018-03-18 21:20:21 
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  104.131.44.150
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-03-12 12:50:19
+                </td>
+                <td>
+                  2018-03-13 10:19:22 
+                </td>
+                <td>
+                  2018-03-12 12:50:19
+                </td>
+                <td>
+                  2018-03-13 10:19:22 
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  88.198.99.27
+                </td>
+                <td>
+                  4143
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-23 00:20:25
+                </td>
+                <td>
+                  2018-03-10 19:20:22 
+                </td>
+                <td>
+                  2018-02-23 00:20:25
+                </td>
+                <td>
+                  2018-03-10 19:20:22 
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  178.62.12.13
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-03-18 22:10:20
+                </td>
+                <td></td>
+                <td>
+                  2018-03-18 22:10:20
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  139.59.185.21
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-23 00:10:27
+                </td>
+                <td></td>
+                <td>
+                  2018-02-23 00:10:27
+                </td>
+                <td></td>
+              </tr>
+            </hbody>
+          </table>
+        </div>
+        <h2 id="supernodes">
+          Supernodes
+        </h2>
+        <p>
+          Supernodes are ordinary infected clients, that were "promoted" by Dridex to relay traffic of regular infected clients. The owners of the IPs are in no way related to the Dridex operation. Do not block these IP addresses, only use them to detect Dridex infections in your own network. 
+        </p>
+        <p>
+          The supernodes from the last 100 days. The columns <em>added</em> and <em>removed</em> show the time whenthe supernodes appeared in and disappeared from a config file. The columns <em>firstseen</em> and <em>lastseen</em> show when the supernode last responded to a Dridex ping. These pings are encrypted by the Dridex network protocol, hence, responding clients arealmost certainly infected by Dridex.Those marked with "<i class="fa fa-eye"></i>" were active with the last 3 days, i.e.,either responded to a ping or were seen in Dridex config. those with "<i class="fa fa-eye-slash"></i>" were inactive. 
+        </p>
+        <div class="table-responsive">
+          <table class="mdttable table table-sm">
+            <thead>
+              <tr>
+                <th>
+                  st. 
+                </th>
+                <th>
+                  ip 
+                </th>
+                <th>
+                  port
+                </th>
+                <th>
+                  botnet
+                </th>
+                <th>
+                  added 
+                </th>
+                <th>
+                  removed
+                </th>
+                <th>
+                  firstseen 
+                </th>
+                <th>
+                  lastseen 
+                </th>
+              </tr>
+            </thead>
+            <hbody>
+              <tr class="statusactive">
+                <td>
+                  <i class="fa fa-eye"></i>
+                </td>
+                <td>
+                  66.186.52.2
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-03-18 21:52:06
+                </td>
+                <td></td>
+                <td>
+                  2018-03-18 21:52:06
+                </td>
+                <td>
+                  2018-03-25 20:52:00 
+                </td>
+              </tr>
+              <tr class="statusactive">
+                <td>
+                  <i class="fa fa-eye"></i>
+                </td>
+                <td>
+                  76.184.3.225
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:40:30
+                </td>
+                <td></td>
+                <td>
+                  2018-02-05 15:40:30
+                </td>
+                <td>
+                  2018-03-25 20:51:49 
+                </td>
+              </tr>
+              <tr class="statusactive">
+                <td>
+                  <i class="fa fa-eye"></i>
+                </td>
+                <td>
+                  71.98.248.128
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:40:51
+                </td>
+                <td>
+                  2018-02-16 13:20:09 
+                </td>
+                <td>
+                  2018-02-05 15:40:51
+                </td>
+                <td>
+                  2018-03-25 20:51:38 
+                </td>
+              </tr>
+              <tr class="statusactive">
+                <td>
+                  <i class="fa fa-eye"></i>
+                </td>
+                <td>
+                  24.239.82.73
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:41:02
+                </td>
+                <td>
+                  2018-02-16 13:20:09 
+                </td>
+                <td>
+                  2018-02-17 16:51:51
+                </td>
+                <td>
+                  2018-03-23 17:51:27 
+                </td>
+              </tr>
+              <tr class="statusactive">
+                <td>
+                  <i class="fa fa-eye"></i>
+                </td>
+                <td>
+                  217.13.106.51
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:39:34
+                </td>
+                <td></td>
+                <td>
+                  2018-02-05 15:39:34
+                </td>
+                <td>
+                  2018-03-23 15:50:36 
+                </td>
+              </tr>
+              <tr class="statusinactive">
+                <td>
+                  <i class="fa fa-eye-slash"></i>
+                </td>
+                <td>
+                  174.109.201.186
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:40:08
+                </td>
+                <td>
+                  2018-02-16 13:20:09 
+                </td>
+                <td>
+                  2018-02-05 15:40:08
+                </td>
+                <td>
+                  2018-03-05 18:51:06 
+                </td>
+              </tr>
+              <tr class="statusinactive">
+                <td>
+                  <i class="fa fa-eye-slash"></i>
+                </td>
+                <td>
+                  107.185.217.40
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:39:12
+                </td>
+                <td>
+                  2018-02-16 13:20:09 
+                </td>
+                <td>
+                  2018-02-13 03:50:14
+                </td>
+                <td>
+                  2018-03-05 07:50:17 
+                </td>
+              </tr>
+              <tr class="statusinactive">
+                <td>
+                  <i class="fa fa-eye-slash"></i>
+                </td>
+                <td>
+                  208.58.127.110
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:40:19
+                </td>
+                <td>
+                  2018-03-11 08:20:12 
+                </td>
+                <td>
+                  2018-02-05 16:51:17
+                </td>
+                <td>
+                  2018-02-22 20:51:08 
+                </td>
+              </tr>
+              <tr class="statusinactive">
+                <td>
+                  <i class="fa fa-eye-slash"></i>
+                </td>
+                <td>
+                  108.188.73.120
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:39:45
+                </td>
+                <td>
+                  2018-03-11 08:20:12 
+                </td>
+                <td>
+                  2018-02-05 15:39:45
+                </td>
+                <td>
+                  2018-02-20 15:50:47 
+                </td>
+              </tr>
+              <tr class="statusinactive">
+                <td>
+                  <i class="fa fa-eye-slash"></i>
+                </td>
+                <td>
+                  73.14.144.224
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:39:57
+                </td>
+                <td>
+                  2018-03-11 08:20:12 
+                </td>
+                <td>
+                  2018-02-05 15:39:57
+                </td>
+                <td>
+                  2018-02-06 09:50:56 
+                </td>
+              </tr>
+              <tr class="statusinactive">
+                <td>
+                  <i class="fa fa-eye-slash"></i>
+                </td>
+                <td>
+                  174.76.22.140
+                </td>
+                <td>
+                  443
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:39:23
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="statusinactive">
+                <td>
+                  <i class="fa fa-eye-slash"></i>
+                </td>
+                <td>
+                  43.231.250.172
+                </td>
+                <td>
+                  3389
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  2018-02-05 15:40:40
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </hbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="modules">
+      <div class="container">
+        <h1>
+          Modules 
+        </h1>
+        <p>
+          Dridex uses various modules:
+          <ul>
+            <li>
+              The <em>loader</em> module is used to infect the client. They use an infrastructure independent from the actual Dridex operation. Loaders are not listed here, as they are mostly delivered by email.
+            </li>
+            <li>
+              The <em>bot</em> module is the core of Dridex v4. It is the only module found on regular clients, apart from traces of the loader. Bots are listed in section <a href="#bots">bots</a>.
+            </li>
+            <li>
+              Supernodes and clients that are otherwise interesting to the Dridex operators (e.g., clients in corporate networks), are equipped with additional modules. For example, the <em>socks</em> module is used to redirect traffic from other infected clients, the <em>vnc</em> module is used to inspect clients before upgrading them to supernodes, or to spy on corporate machines. 
+            </li>
+          </ul>
+          The modules from the last 365 days are listed. 
+        </p>
+        <h2 id="bots">
+          Bots
+        </h2>
+        <p>
+          Dridex bots are distinguished by a version number and timestamp. For each version, there are often multiple different hashes and timestamps, which is a result of recompiling and repacking the modules.
+        </p>
+        <div class="table-responsive">
+          <table class="mdttable table table-sm">
+            <thead>
+              <tr>
+                <th>
+                  timestamp
+                </th>
+                <th>
+                  botnet
+                </th>
+                <th>
+                  architecture
+                </th>
+                <th>
+                  version
+                </th>
+                <th>
+                  md5
+                </th>
+                <th>
+                  virustotal 
+                </th>
+              </tr>
+            </thead>
+            <hbody>
+              <tr>
+                <td>
+                  2018-03-23 18:13:54
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  4.85
+                </td>
+                <td>
+                  ceeb0c36d1eeb5f35f82ddd3bce58716 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/24d81794c551fcef8ce0111508802d2a5b281bac1224fcc57f4935656869e7ee/analysis/1522003902/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-23 18:13:27
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  4.85
+                </td>
+                <td>
+                  d819d6785b313258f4434b5e3db7b268 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/28e73661d02aecd9ab1700a316a75bb06558a90e6221c4669ca6b5aa674dec2c/analysis/1522004177/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:28
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  4.85
+                </td>
+                <td>
+                  f41fb1019007c5e03ff3d38ee91523dd 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/cefa0484d4d04e69f032bf8257f31020871c5237cb30d008d17b010595b4716f/analysis/1522003945/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:28
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  4.85
+                </td>
+                <td>
+                  df80d463f19b61f2bc10622e2172fd36 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/e2cac6565c944f8929d2da1e8f8897f62e10dc7b51d3d45753780eaffe0f72cb/analysis/1522003858/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:14
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  4.85
+                </td>
+                <td>
+                  306b584f2b6189699b9597a14734fa95 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/28f36d8cb6ec77836a1c89aa35cf0f79c559c0d7a01cefd6674412296023653f/analysis/1522004305/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:14
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  4.85
+                </td>
+                <td>
+                  3113f7ca01b174211eae1a3a8f1614df 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/fddfb10102fe40e5cd7fffe696f0f83fa279d39d7f749e9628e5d4d596234b94/analysis/1522004262/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-16 07:13:10
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  4.83
+                </td>
+                <td>
+                  d053911bbc6865377eb70720aa4c4d4d 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/c755a19f8c1bfd2cc3d9e7a963a42dca85d3836249457829464152a139da359e/analysis/1519947620/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-16 07:12:54
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  4.83
+                </td>
+                <td>
+                  964e6212ab22e166a343f5417514f62d 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/67b4177faaa2dc7c67a72ca7408c03aac277e9131cf3217ca38f36f5d192a525/analysis/1522004220/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-15 19:28:44
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td></td>
+                <td>
+                  9e2dcff64c9c000b06dd327b5838b885 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/13c03ab67b9af5ab1f25374447d2463222d27639185f41927f62993ca657d5ea/analysis/1522003773/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-15 19:28:31
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td></td>
+                <td>
+                  1cf32534fe2bcd55420301fe18a1dfc1 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/edb988709fb7f1dab7a71415cc6041a1f9450b432e7fb478158ba4f0ab0c0ede/analysis/1522004409/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-05 09:24:10
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  4.82
+                </td>
+                <td>
+                  32ac659d0f4233bc4bf98ada3f550406 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/79e58d4b829463b402f35c5b9325c6d09f333091f52ffe2ed1a0f3420d82fcc2/analysis/1522004009/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-05 09:23:23
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  4.82
+                </td>
+                <td>
+                  3fa18db246e3766ca221858e44d4a0fc 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/f246a6bc3b307d26f1caa2e277a984f32975a5d32325c277ae89499857f75001/analysis/1522004135/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-29 14:44:07
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td></td>
+                <td>
+                  fde741f87afd2dbf3babce86b2abc55f 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/6b4f6f70cd772302725c3ddd0963b9ccea5fde5d0103cdd4432282e28b5634e1/analysis/1522003815/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-29 14:43:57
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td></td>
+                <td>
+                  8c70d12fe79a6860b2ef28de45aa201c 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/264bb841d1a4fb4200f49f70f48dc7a1949e5294f16fa94c226e20893196f0f0/analysis/1522004367/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:08:30
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td></td>
+                <td>
+                  88ffbfb96c645904f1f7ec3336bbaa01 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/afa5811612ddafdfa5259590ba32e009b1385daa766c89943bc3ca2e41774912/analysis/1522004050/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:07:40
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td></td>
+                <td>
+                  f501fe0bb0dd2816d4107ba11fcb136b 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/c1fd5c3ecfa6e896a13dd4c76d511adfa5e0eb80b0230545f81cd64107bab264/analysis/1522003475/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:01:20
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td></td>
+                <td>
+                  55550b908499159083986fc0678a1c2c 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/0535ea005e438a57a2b3ab92a354473aee101cfe4216d116e21c084cae8353d6/analysis/1522003516/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:01:16
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td></td>
+                <td>
+                  dc80969ec4f3a778e3b32da1b42daebb 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/bf063ee5a0128d6d69705a3f93a6a68d50053295bf43dd9807fa7f18e6178123/analysis/1522004092/" role="button">VT </a>
+                </td>
+              </tr>
+            </hbody>
+          </table>
+        </div>
+        <h2 id="auxmodules">
+          Auxiliary Modules 
+        </h2>
+        <p>
+          The auxiliary modules are often off-the-shelf, legitimate binaries (e.g., VNC or the socks proxy). These modules are updated much less frequently than Dridex bots.
+        </p>
+        <p>
+          Dridex v4 uses CRC32 checksum in lieu of names. In some instance, the names behind the CRC checksums are known. In other cases, the names are missing. In these cases only the CRC32 checksum is shown.
+        </p>
+        <div class="table-responsive">
+          <table class="mdttable table table-sm">
+            <thead>
+              <tr>
+                <th>
+                  timestamp
+                </th>
+                <th>
+                  name
+                </th>
+                <th>
+                  botnet
+                </th>
+                <th>
+                  architecture
+                </th>
+                <th>
+                  md5
+                </th>
+                <th>
+                  virustotal 
+                </th>
+              </tr>
+            </thead>
+            <hbody>
+              <tr>
+                <td>
+                  2018-03-23 18:13:54
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  ceeb0c36d1eeb5f35f82ddd3bce58716 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/24d81794c551fcef8ce0111508802d2a5b281bac1224fcc57f4935656869e7ee/analysis/1522003902/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-23 18:13:27
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  d819d6785b313258f4434b5e3db7b268 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/28e73661d02aecd9ab1700a316a75bb06558a90e6221c4669ca6b5aa674dec2c/analysis/1522004177/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:28
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  f41fb1019007c5e03ff3d38ee91523dd 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/cefa0484d4d04e69f032bf8257f31020871c5237cb30d008d17b010595b4716f/analysis/1522003945/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:28
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  df80d463f19b61f2bc10622e2172fd36 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/e2cac6565c944f8929d2da1e8f8897f62e10dc7b51d3d45753780eaffe0f72cb/analysis/1522003858/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:14
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  306b584f2b6189699b9597a14734fa95 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/28f36d8cb6ec77836a1c89aa35cf0f79c559c0d7a01cefd6674412296023653f/analysis/1522004305/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-03-11 07:48:14
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  3113f7ca01b174211eae1a3a8f1614df 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/fddfb10102fe40e5cd7fffe696f0f83fa279d39d7f749e9628e5d4d596234b94/analysis/1522004262/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-16 07:13:10
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  d053911bbc6865377eb70720aa4c4d4d 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/c755a19f8c1bfd2cc3d9e7a963a42dca85d3836249457829464152a139da359e/analysis/1519947620/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-16 07:12:54
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  964e6212ab22e166a343f5417514f62d 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/67b4177faaa2dc7c67a72ca7408c03aac277e9131cf3217ca38f36f5d192a525/analysis/1522004220/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-15 19:28:44
+                </td>
+                <td>
+                  vnc
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  9e2dcff64c9c000b06dd327b5838b885 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/13c03ab67b9af5ab1f25374447d2463222d27639185f41927f62993ca657d5ea/analysis/1522003773/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-15 19:28:31
+                </td>
+                <td>
+                  vnc
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  1cf32534fe2bcd55420301fe18a1dfc1 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/edb988709fb7f1dab7a71415cc6041a1f9450b432e7fb478158ba4f0ab0c0ede/analysis/1522004409/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-05 09:24:10
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  32ac659d0f4233bc4bf98ada3f550406 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/79e58d4b829463b402f35c5b9325c6d09f333091f52ffe2ed1a0f3420d82fcc2/analysis/1522004009/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-02-05 09:23:23
+                </td>
+                <td>
+                  bot
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  3fa18db246e3766ca221858e44d4a0fc 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/f246a6bc3b307d26f1caa2e277a984f32975a5d32325c277ae89499857f75001/analysis/1522004135/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-29 14:44:07
+                </td>
+                <td>
+                  vnc
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  fde741f87afd2dbf3babce86b2abc55f 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/6b4f6f70cd772302725c3ddd0963b9ccea5fde5d0103cdd4432282e28b5634e1/analysis/1522003815/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-29 14:43:57
+                </td>
+                <td>
+                  vnc
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  8c70d12fe79a6860b2ef28de45aa201c 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/264bb841d1a4fb4200f49f70f48dc7a1949e5294f16fa94c226e20893196f0f0/analysis/1522004367/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:08:30
+                </td>
+                <td>
+                  n/a
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  88ffbfb96c645904f1f7ec3336bbaa01 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/afa5811612ddafdfa5259590ba32e009b1385daa766c89943bc3ca2e41774912/analysis/1522004050/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:07:40
+                </td>
+                <td>
+                  n/a
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  f501fe0bb0dd2816d4107ba11fcb136b 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/c1fd5c3ecfa6e896a13dd4c76d511adfa5e0eb80b0230545f81cd64107bab264/analysis/1522003475/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:01:20
+                </td>
+                <td>
+                  socks
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  64bit
+                </td>
+                <td>
+                  55550b908499159083986fc0678a1c2c 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/0535ea005e438a57a2b3ab92a354473aee101cfe4216d116e21c084cae8353d6/analysis/1522003516/" role="button">VT </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2018-01-28 13:01:16
+                </td>
+                <td>
+                  socks
+                </td>
+                <td>
+                  23005
+                </td>
+                <td>
+                  32bit
+                </td>
+                <td>
+                  dc80969ec4f3a778e3b32da1b42daebb 
+                </td>
+                <td>
+                  <a class="btn btn-sm btn-primary" href="https://www.virustotal.com/file/bf063ee5a0128d6d69705a3f93a6a68d50053295bf43dd9807fa7f18e6178123/analysis/1522004092/" role="button">VT </a>
+                </td>
+              </tr>
+            </hbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="rules">
+      <div class="container">
+        <h1>
+          Rules
+        </h1>
+        <h2>
+          Yara-Rules
+        </h2>
+        Yara-Rules for the botnet modules, based only on md5 sum, no pattern match.<br /><a class="btn btn-primary btn-lg" href="./files/dridexbinaries.yara" role="button">Dridex Modules</a>
+        <h2>
+          Snort rules of the 
+        </h2>
+        <a class="btn btn-primary btn-lg" href="./files/dridexsupernodes.rules" role="button">Dridex Supernodes</a> <a class="btn btn-primary btn-lg" href="./files/dridexredirects.rules" role="button">Dridex Redirects</a>
+        <h2>
+          CSV        
+        </h2>
+        <p>
+          CSV file of the bot MD5s, the supernodes of the last 100 days, and the redirects of the 31 days.
+        </p>
+        <a class="btn btn-primary btn-lg" href="./files/all.csv" role="button">CSV </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container"></div>
+      <div class="copyright py-4">
+        <div class="container">
+          <small>last updated 2018-03-25 21:12:02 UTC. </small>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="/js/dridextracker.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.mdttable').DataTable({
+          "aaSorting": []
+      })
+    });
+  </script>
 </html>
