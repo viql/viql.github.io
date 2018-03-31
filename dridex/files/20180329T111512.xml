@@ -492,38 +492,4 @@ qweqweqwe.send();
       <ip>178.62.232.185</ip>
     </host>
   </c2>
-  <supernodes>
-    <node>
-      <ip>73.138.81.95</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>50.251.187.217</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>104.34.220.68</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>193.251.189.134</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>212.237.42.204</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>81.254.168.177</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>109.21.222.28</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>66.65.47.220</ip>
-      <port>443</port>
-    </node>
-  </supernodes>
 </settings>
