@@ -379,34 +379,4 @@ document.head.appendChild(jq_plgn_ext);\1</replacement>
       <ip>67.207.142.38</ip>
     </host>
   </c2>
-  <supernodes>
-    <node>
-      <ip>41.193.159.41</ip>
-      <port>444</port>
-    </node>
-    <node>
-      <ip>41.193.159.41</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>104.231.38.241</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>5.226.111.135</ip>
-      <port>444</port>
-    </node>
-    <node>
-      <ip>151.0.179.218</ip>
-      <port>8443</port>
-    </node>
-    <node>
-      <ip>47.42.53.110</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>179.108.87.11</ip>
-      <port>443</port>
-    </node>
-  </supernodes>
 </settings>

