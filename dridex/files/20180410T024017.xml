@@ -4,7 +4,7 @@
     ***            dridex v4 configuration                    ***    
     *************************************************************    
     botnetid:      23005    
-    cfg timestamp: 2018-04-09T18:10:45+00:00    
+    cfg timestamp: 2018-04-10T02:40:17+00:00    
     parsed by:     @viql    
         
     note: The dridex v4 config is delivered in binary format;    
@@ -42,13 +42,13 @@
     </module>
   </modules>
   <commands>
-    <cmd id="2553" type="22">
+    <cmd id="484" type="22">
       <fs/>
     </cmd>
-    <cmd id="2554" type="19">
+    <cmd id="485" type="19">
       <fs/>
     </cmd>
-    <cmd id="4813" type="9">
+    <cmd id="4809" type="9">
       <fs/>
     </cmd>
   </commands>
@@ -509,7 +509,7 @@
     <clickshots>
       <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://(login|www)\.tranzact\.org/</clickshot>
     </clickshots>
-    <timestamp>2018-04-09T18:10:45+00:00</timestamp>
+    <timestamp>2018-04-10T02:40:17+00:00</timestamp>
   </config>
   <c2>
     <host>
