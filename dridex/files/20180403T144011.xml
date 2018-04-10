@@ -23,17 +23,17 @@
 <settings>
   <modules>
     <module>
-      <sha256>b9492add6b867bd9df4474e43648af0aa46cbf0c5bf2d7b27b91f5a3f9313351</sha256>
-      <sha1>ddf1695ada70cf2e37eb38e52060756fa3dca166</sha1>
-      <md5>c39d8295ce6d81c57e7f3044b5feeaae</md5>
-      <timestamp>2017-12-30T23:01:28+00:00</timestamp>
-      <architecture>32</architecture>
+      <sha256>ccf410a1f98edc0cb21afe90db1f89d46234d191029490d2cdf09be7aa217442</sha256>
+      <sha1>e2c2f8b9e6b43d6a70c0b451fe85039847fd687f</sha1>
+      <md5>937a7ba06ed92aee14e11c457a11e322</md5>
+      <timestamp>2017-12-30T23:01:35+00:00</timestamp>
+      <architecture>64</architecture>
       <name>n/a</name>
       <crc>0x1d1df6f5</crc>
     </module>
   </modules>
   <commands>
-    <cmd id="1122739" type="19">
+    <cmd id="844059" type="19">
       <fs/>
     </cmd>
   </commands>
