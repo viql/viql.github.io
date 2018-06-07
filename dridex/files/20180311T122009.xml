@@ -4,7 +4,7 @@
     ***            dridex v4 configuration                    ***    
     *************************************************************    
     botnetid:      2144    
-    cfg timestamp: 2018-03-14T13:00:10+01:00    
+    cfg timestamp: 2018-03-11T13:20:09+01:00    
     parsed by:     @viql    
         
     note: The dridex v4 config is delivered in binary format;    
@@ -33,10 +33,10 @@
     </module>
   </modules>
   <commands>
-    <cmd id="572377" type="15">
+    <cmd id="401701" type="15">
       <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
     </cmd>
-    <cmd id="572378" type="22">
+    <cmd id="465597" type="22">
       <fs/>
     </cmd>
   </commands>
@@ -207,8 +207,8 @@
       </httpinject>
     </httpinjects>
     <redirects2>
-      <redirect name="2nd_t" postfwd="0" socks="1" timeout="30" uri="https://178.62.232.185:443/engagement" vnc="1">msoffice365.js</redirect>
-      <redirect name="1st_t" postfwd="0" socks="0" timeout="20" uri="https://178.62.232.185:443/dealdemand" vnc="0">ember3.js</redirect>
+      <redirect name="2nd_t" postfwd="0" socks="1" timeout="30" uri="https://62.75.148.105:443/engagement" vnc="1">msoffice365.js</redirect>
+      <redirect name="1st_t" postfwd="0" socks="0" timeout="20" uri="https://62.75.148.105:443/dealdemand" vnc="0">ember3.js</redirect>
       <redirect name="ubs_ebanking2_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/ubs_ebanking2_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\-ch\d*\.ubs\.com/workbench/</redirect>
       <redirect name="raiffeisen_ch_redirect" postfwd="1" socks="0" timeout="20" uri="https://178.33.109.227:443/5/raiffeisen_ch_y7rKX8yF819Lg3/" vnc="0">^https://ebanking\.raiffeisen\.ch/entry/</redirect>
       <redirect name="images_redirect" postfwd="1" socks="0" timeout="20" uri="https://216.51.232.176:4043/get-dbYd81hd83H/\1" vnc="0">^https://.*/image777000/(.+)</redirect>
@@ -218,65 +218,25 @@
     </redirects2>
     <redirects/>
     <handlers>
-      <handler handler="timeout" name="name" script="switchoff.js">https://178.62.232.185:443/B88U86giIPyD55RK/</handler>
+      <handler handler="timeout" name="name" script="switchoff.js">https://62.75.148.105:443/B88U86giIPyD55RK/</handler>
     </handlers>
     <httpblocks/>
     <clickshots/>
-    <timestamp>2018-03-14T13:00:10+01:00</timestamp>
+    <timestamp>2018-03-11T13:20:09+01:00</timestamp>
   </config>
   <c2>
     <host>
       <port>443</port>
-      <ip>178.62.232.185</ip>
+      <ip>62.75.148.105</ip>
     </host>
   </c2>
   <supernodes>
-    <node>
-      <ip>139.78.21.232</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>81.254.168.177</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>91.189.43.152</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>70.184.66.94</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>66.65.47.220</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>50.251.187.217</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>193.251.189.134</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>172.249.88.69</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>104.34.220.68</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>37.153.92.6</ip>
-      <port>8443</port>
-    </node>
     <node>
       <ip>212.237.42.204</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>108.205.215.92</ip>
+      <ip>81.254.168.177</ip>
       <port>443</port>
     </node>
     <node>
@@ -288,23 +248,55 @@
       <port>443</port>
     </node>
     <node>
+      <ip>185.93.183.30</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>104.34.220.68</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>50.251.187.217</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>108.205.215.92</ip>
+      <port>443</port>
+    </node>
+    <node>
       <ip>74.66.65.127</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>73.138.81.95</ip>
+      <ip>91.189.43.152</ip>
       <port>443</port>
+    </node>
+    <node>
+      <ip>193.251.189.134</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>172.249.88.69</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>37.153.92.6</ip>
+      <port>8443</port>
     </node>
     <node>
       <ip>37.153.92.6</ip>
       <port>444</port>
     </node>
     <node>
-      <ip>185.93.183.30</ip>
+      <ip>73.138.81.95</ip>
       <port>443</port>
     </node>
     <node>
       <ip>185.93.183.30</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>66.65.47.220</ip>
       <port>443</port>
     </node>
   </supernodes>

