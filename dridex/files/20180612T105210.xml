@@ -1,0 +1,288 @@
+<?xml version="1.0" ?>
+<!--
+    *************************************************************    
+    ***            dridex v4 configuration                    ***    
+    *************************************************************    
+    botnetid:      11122    
+    cfg timestamp: 2018-06-12T10:52:10+00:00    
+    parsed by:     @viql    
+        
+    note: The dridex v4 config is delivered in binary format;    
+          in contrast to dridex v3, there are no configs in    
+          XML format. I tried to replicate the format from v3    
+          as good as possible, but they might not all be correct.    
+        
+          The "modules" blocks originally contain full binaries.    
+          I replaced them with hashes. All modules in Dridex are    
+          identified by crc32 checksums, when known, the "name"    
+          matching the CRC32 is also listed. Neither the hashes,     
+          nor name are part of the config delivered by Dridex.    
+    *************************************************************
+-->
+
+<settings>
+  <modules>
+    <module>
+      <sha256>840e204392d2183ec7198917f73c9765f79d4baa0a05721f1d9a41b8670a7608</sha256>
+      <sha1>dc8a5f69bc48c4475bc4a44e7eb0fd99a5a7a537</sha1>
+      <md5>2680cd66b98910d26bfd815d83ca330f</md5>
+      <timestamp>2017-05-12T19:19:16+00:00</timestamp>
+      <architecture>64</architecture>
+      <name>grabber</name>
+      <crc>0x4d38f016</crc>
+    </module>
+  </modules>
+  <commands>
+    <cmd id="1006669" type="15">
+      <fs>crealogix,multiversa,abacus,ebics,agro-office,cashcomm,softcrew,coconet,macrogram,mammut,omikron,multicash,quatersoft,alphasys,wineur,epsitec,myaccessweb,bellin,financesuite,moneta,softcash,trinity,financesuite,abrantix,starmoney,sfirm,migrosbank,migros bank,online banking,star money,multibit,bitgo,bither,blockchain,copay,msigna,armory,electrum,coinbase,magnr,keepkey,coinsbank,coolwallet,bitoex,xapo,changetip,coinapult,blocktrail,breadwallet,luxstack,airbitz,schildbach,ledger nano,mycelium,trezor,coinomi,bitcore</fs>
+    </cmd>
+    <cmd id="1006671" type="22">
+      <fs/>
+    </cmd>
+  </commands>
+  <config>
+    <httpshots>
+      <url onget="1" onpost="1" type="deny">\.(gif|png|jpg|css|swf|ico|js)($|\?)</url>
+      <url onget="1" onpost="1" type="deny">(resource\.axd|yimg\.com)</url>
+      <url onget="1" onpost="1" type="allow">^https://secure.+\.chase\.com/.+/accounts/secure/v2/account/detail/dda/list</url>
+      <url onget="1" onpost="1" type="allow">^https://chaseonline\.chase\.com/MyAccounts\.aspx</url>
+    </httpshots>
+    <formgrabber>
+      <url type="allow">^http://.*citrix</url>
+      <url type="allow">^http://.+winbacs/</url>
+      <url type="allow">^http://sisesrv1/</url>
+      <url type="allow">^http://synfo/</url>
+      <url type="allow">^http://.+\:81/.*</url>
+      <url type="allow">^http://.+\:8888/.*</url>
+      <url type="allow">^http://.+\:8090/.*</url>
+      <url type="allow">^http://.+\:8084/.*</url>
+      <url type="allow">^http://127\.0\.0\.1:3495</url>
+      <url type="allow">^http://.+/MULTIVERSA</url>
+      <url type="allow">^http://.+/workbench/</url>
+      <url type="allow">^http://.+/flows/ebanking/</url>
+      <url type="allow">^http://srvesmad04:8080/</url>
+      <url type="allow">^http://srvaweb01/</url>
+      <url type="allow">^http://.*/sapphire/</url>
+      <url type="allow">^http://192\.168\.161\.23</url>
+      <url type="allow">^http://.+/mscmain</url>
+      <url type="allow">^http://shv-09</url>
+      <url type="allow">^http://intersection</url>
+      <url type="allow">^http://cujc-arcu/</url>
+      <url type="allow">^http://.+\:3495/.*</url>
+      <url type="allow">^http://.+\:3496/.*</url>
+      <url type="allow">^http://.+\:40000/.*</url>
+      <url type="allow">^http://.+\:9000/.*</url>
+      <url type="allow">^http://core-web/</url>
+      <url type="allow">^http://core-syn/</url>
+      <url type="allow">^http://r-space/</url>
+      <url type="allow">^http://dtsgui\.cbhi\.local/</url>
+      <url type="allow">^http://10\.118\.32\.33/</url>
+      <url type="allow">^http://webmail\.</url>
+      <url type="allow">^http://dtsacquire2011</url>
+      <url type="allow">^http://arta2/</url>
+      <url type="allow">^http://dtsap:70/</url>
+      <url type="allow">^http://nmain/</url>
+      <url type="allow">^http://170\.209\.0\.(3|2)</url>
+      <url type="allow">^http://.*/flows/banking/</url>
+      <url type="allow">^http://.*/b2b/faces/login/</url>
+      <url type="allow">^http://.*ingbusinessonline</url>
+      <url type="allow">^http://.*multiweb</url>
+      <url type="allow">^http://.*multiversa</url>
+      <url type="allow">^http://bankway.*/</url>
+      <url type="allow">^http://ebanking</url>
+      <url type="allow">^http://.*office-wings</url>
+      <url type="allow">^http://.+/login\.aspx</url>
+      <url type="allow">^https://www\.facebook\.com/login\.php</url>
+      <url type="deny">^https://.*\.facebook\.com/</url>
+      <url type="deny">^https://twitter.com/(login|account/login_challenge/|sessions)</url>
+      <url type="deny">^https://.*?twitter\.com/</url>
+      <url type="deny">^https://.*?twitch\.tv/</url>
+      <url type="deny">^https://(.*?\.|)gvt2\.com/</url>
+      <url type="deny">^https://.*?youtube\.com/</url>
+      <url type="allow">^https://www.linkedin.com/uas/login</url>
+      <url type="deny">^https://www\.linkedin\.com/</url>
+      <url type="allow">^https://accounts\.google\.com/_/signin/</url>
+      <url type="deny">^https://.*?google\.com/</url>
+      <url type="allow">^https://www\.readcube\.com/.*login</url>
+      <url type="deny">^https://(.*?\.|)readcube\.com/</url>
+      <url type="allow">^https://.*\.sprint.com/.*/login\.jsp</url>
+      <url type="deny">^https://(.*?\.|)sprint.com/</url>
+      <url type="allow">^https://www\.amazon\..+/signin</url>
+      <url type="deny">^https://(.*?\.|)amazon.com/</url>
+      <url type="deny">^https://www\.facilocados\.com</url>
+      <url type="deny">^https://www\.skyrana\.com</url>
+      <url type="deny">^https?://docs\.google\.[^/]+/</url>
+      <url type="deny">^https?://.*\.365lpodds\.com</url>
+      <url type="deny">^https?://outlook\.live\.com</url>
+      <url type="deny">^https?://cws\.conviva\.com</url>
+      <url type="allow">^https://login\.yahoo\.com/account/(challenge|change\-password)</url>
+      <url type="deny">^https?://.*\.yahoo\.com</url>
+      <url type="allow">^https://www\.wsitrader\.com/Account/Login</url>
+      <url type="deny">^https?://.*\.?wsitrader\.com</url>
+      <url type="allow">^https://www\.netflix\.com/(.*/)?Login</url>
+      <url type="deny">^https?://.*\.?netflix\.com</url>
+      <url type="deny">^https?://logx\.optimizely\.com</url>
+      <url type="allow">^https://www\.adnxs\.com/index/login</url>
+      <url type="deny">^https?://(.*\.)?adnxs\.com</url>
+      <url type="allow">^https://fxgmlogin\.tradenetworks\.com</url>
+      <url type="deny">^https?://(.*\.)?tradenetworks\.com</url>
+      <url type="deny">^https?://otf\.msn\.com</url>
+      <url type="allow">^https://(.*\.)?pinterest\.com/resource/UserSessionResource/create</url>
+      <url type="deny">^https?://(.*\.)?pinterest\.com</url>
+      <url type="deny">^https?://pebed\.dm\.gg</url>
+      <url type="deny">^https?://.*\.taboola\.com</url>
+      <url type="deny">^https?://www\.googleapis\.com</url>
+      <url type="allow">^https://app\.pinterest\.com/admins/sign_in</url>
+      <url type="deny">^https?://(.*\.)?intercom\.io</url>
+      <url type="deny">^https://bolt\.dropbox\.com/.*/notify/</url>
+      <url type="deny">^https://.*\.liverail\.com</url>
+      <url type="deny">^https://urs\.microsoft\.com/</url>
+      <url type="deny">^https://.+\.services\.mozilla\.com/</url>
+      <url type="deny">^https://localhost.*/skypectoc/</url>
+      <url type="deny">^https://.*\.skype\.com/api/</url>
+      <url type="deny">^https://incoming\.telemetry\.mozilla\.org/</url>
+      <url type="deny">^https://www\.bing\.com/</url>
+      <url type="deny">^https://self-repair\.mozilla\.org/api/</url>
+      <url type="deny">^https://api\.firefox\.com</url>
+      <url type="deny">^https://mc\.yandex\.ru</url>
+      <url type="deny">^https://.*\.orangeapps\.ru/candyvalley/</url>
+      <url type="deny">^https://candy.*\.king\.com/rpc/ClientApi</url>
+      <url type="deny">^https://api\.accounts\.firefox\.com/</url>
+      <url type="deny">^https://banners\.webmasterplan\.com/.*\.aspx</url>
+      <url type="deny">^https://.*\.forgeofempires\.com/game/json</url>
+      <url type="deny">^https://collector\.schibsted\.io/api/v1/track/</url>
+    </formgrabber>
+    <httpinjblock>
+      <url type="allow">cashproonline-.+\.bankofamerica\.com</url>
+      <url type="allow">www3\.bankline\.</url>
+      <url type="allow">pioneer\.co-operativebank\.</url>
+      <url type="allow">go\.ashx</url>
+      <url type="allow">cashproonline\-img024\.bankofamerica\.com</url>
+      <url type="allow">cashproonline\-ecache\.bankofamerica\.com</url>
+      <url type="allow">roll\.bankofamerica\.com</url>
+      <url type="allow">streak\.bankofamerica\.com</url>
+      <url type="allow">pane\.bankofamerica\.com</url>
+      <url type="allow">www\.u43\.pnc\.com/pressroom</url>
+      <url type="allow">www2\.citibank\.citigroup\.com</url>
+      <url type="allow">www7\.bbvacompass\.com</url>
+      <url type="allow">www7\.compassbank\.com</url>
+      <url type="allow">paper\.citi\.com</url>
+      <url type="allow">steps\.citi\.com</url>
+      <url type="allow">dir\.citi\.com</url>
+      <url type="allow">ground\.citi\.com</url>
+      <url type="allow">olbb2cd1\.bmo\.com</url>
+      <url type="allow">olbb2cd2\.bmo\.com</url>
+      <url type="allow">teertst\.santander\.com\.mx</url>
+      <url type="allow">teertst2\.santander\.com\.mx</url>
+      <url type="allow">www3\.drob\.santanderbank\.com</url>
+      <url type="allow">www7\.drob\.santanderbank\.com</url>
+      <url type="allow">cdn2\.svbconnect\.com</url>
+      <url type="allow">news1\.svbconnect\.com</url>
+      <url type="allow">ww7\.whitneybank\.com</url>
+      <url type="allow">rdstl\.tiaa\-cref\.org</url>
+      <url type="allow">jbmd\.tiaa\-cref\.org</url>
+      <url type="allow">active\.efirstbank\.com</url>
+      <url type="allow">swift\.efirstbank\.com</url>
+      <url type="allow">rapid\.efirstbank\.com</url>
+      <url type="allow">cdn\.arvest\.com</url>
+      <url type="allow">frame\.accountonline\.com</url>
+      <url type="allow">folder\.accountonline\.com</url>
+      <url type="allow">portal\.accountonline\.com</url>
+      <url type="allow">www2\.americafirst\.com</url>
+      <url type="allow">images3\.webcashmgmt\.com</url>
+      <url type="allow">cache\.webcashmgmt\.com</url>
+      <url type="allow">static\.webcashmgmt\.com</url>
+      <url type="allow">ins4\.enterprisebanker\.com</url>
+      <url type="allow">web13\.enterprisebanker\.com</url>
+      <url type="allow">web12\.columbiabank\.com</url>
+      <url type="allow">treasurysource3\.bokf\.com</url>
+      <url type="allow">treasurysource2\.bokf\.com</url>
+      <url type="allow">www\.amegybank\.com/metrics/</url>
+      <url type="allow">www2\.busey\.com</url>
+      <url type="allow">www5\.busey\.com</url>
+      <url type="allow">tssportal\.jpmorgan\.com</url>
+      <url type="allow">edd2\.ntrs\.com</url>
+      <url type="allow">pes1\.northerntrust\.com</url>
+      <url type="allow">staticimg\.fs\.ml\.com</url>
+      <url type="allow">statements\.benefits\.ml\.com</url>
+      <url type="allow">information\.benefits\.ml\.com</url>
+      <url type="allow">wex8\.suntrust\.com</url>
+      <url type="allow">www7\.suntrust\.com</url>
+      <url type="allow">www3\.firstambank\.com</url>
+      <url type="allow">cdn12\.firstambank\.com</url>
+      <url type="allow">www\.treasury\.pncbank\.com/tmmps/</url>
+      <url type="allow">trk\.firstcitizens\.com</url>
+      <url type="allow">www9\.firstcitizens\.com</url>
+      <url type="allow">cap\.firstcitizens\.com</url>
+      <url type="allow">www\.frostcashmanager\.com/24068/</url>
+      <url type="allow">tps\.hawaiistatefcu\.com</url>
+      <url type="allow">tms\.hawaiistatefcu\.com</url>
+      <url type="allow">ww7\.hancockbank\.com</url>
+      <url type="allow">consumerservices\.gcb\.citibank\.co\.in</url>
+      <url type="allow">market\.gcb\.citibank\.co\.in</url>
+      <url type="allow">ww5\.prkcorp\.com</url>
+      <url type="allow">sgl\.prkcorp\.com</url>
+      <url type="allow">esvb\.lakelandbank\.com</url>
+      <url type="allow">online1\.lakelandbank\.com</url>
+    </httpinjblock>
+    <httpinjects/>
+    <redirects2/>
+    <redirects>
+      <redirects onget="1" onpost="0" timeout="0" type="allow">^https://securebusiness\.lloydsbank\.co\.uk/business/a/logon/authenticationinformation\.jsp</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://secure\.bankofamerica\.com/myaccounts/signin/signIn\.go</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://online\.wellsfargo\.com/das/cgi\-bin/session\.cgi\?screenid\=SIGNON_PORTAL_PAUSE</redirects>
+      <redirects onget="1" onpost="0" timeout="100" type="allow">cr;ff:^https://secure.+\.chase\.com/.+/accounts/secure/v2/account/detail/dda/list;ie:^https://secure.*\.chase\.com/web/accounts/dashboard/index</redirects>
+      <redirects onget="1" onpost="0" timeout="2000" type="allow">https://secure.*.chase.com/web/auth/router\?lob=COLLogon</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://online\.citi\.com/US/REST/accountsPanel/getCustomerAccounts\.jws</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://secure\.capitalone360\.com/myaccount/banking/account_summary\.vm</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://chaseonline\.chase\.com/MyAccounts\.aspx</redirects>
+      <redirects onget="1" onpost="1" timeout="300" type="allow">^https://oltx\.fidelity\.com/ftgw/fbc/oftop/portfolio</redirects>
+      <redirects onget="1" onpost="1" timeout="1000" type="deny">\.(gif|png|bmp|jpg|css|swf|ico|js|pdf|doc|docx|txt)($|\?)</redirects>
+      <redirects onget="1" onpost="1" timeout="1000" type="deny">(resource\.axd|yimg\.com)</redirects>
+    </redirects>
+    <handlers/>
+    <httpblocks/>
+    <clickshots>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://(login|www)\.tranzact\.org/</clickshot>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://ibank1\.bib\.barclays\.com/</clickshot>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://cashmanagement\.barclays\.net/portalservices/</clickshot>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://cashmanagement\.barclays\.net/bnetservices/</clickshot>
+      <clickshot clicks="10" onget="1" onpost="1" type="allow" xrange="500" yrange="500">^https://corporate\.santander\.co\.uk/LOGSCU_NS_ENS/BtoChannelDriver\.bto</clickshot>
+      <clickshot clicks="10" onget="1" onpost="1" type="allow" xrange="500" yrange="500">^https://corporate\.santander\.co\.uk/(SCU_AUTHOR_ENS|SCU_PAYMNT_ENS)/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://entreprises\.societegenerale\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://entreprises\.certif\.societegenerale\.fr/authent\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://entreprises\.secure\.societegenerale\.fr/authent\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://professionnels\.secure\.lcl\.fr/outil/UAUT/Accueil/preRoutageLogin</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/grands-institutionnels\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/entreprises\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/grandes-entreprises\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.labanquepostale\.fr/professionnels\.html</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://professionnels\.secure.societegenerale\.fr/$</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://professionnels\.societegenerale\.fr/$</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://secure1\.entreprises\.bnpparibas\.net/sommaire/jsp/identification\.jsp</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://entreprises\.bnpparibas\.net/NSAccess</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://www2\.bancopopular\.es/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https?://www\.ce-g3-enligne\.credit-agricole\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://www\.normand-g3-enligne\.credit-agricole\.fr/stb/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https?://www\.ca-paris\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https?://www\.net\d+\.caisse-epargne\.fr/</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://www\.anjou-maine-ediweb\.credit-agricole\.fr</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="35" yrange="35">^https://statso\.par\.societegenerale\.fr</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://.+\.fr/stb/entreeBam</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https?://particuliers\.secure\.societegenerale\.fr</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://www\.caisse-epargne\.fr/particuliers/normandie/accueil\.aspx</clickshot>
+      <clickshot clicks="15" onget="1" onpost="1" type="allow" xrange="30" yrange="30">^https://rib\.ecobank\.com/ecobankburkina/internet</clickshot>
+      <clickshot clicks="20" onget="1" onpost="1" type="allow" xrange="40" yrange="40">^https://ibank\.humebank\.com\.au/mvp/signon/login\.asp</clickshot>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.lloydsbank\.co\.uk/personal/a/account_overview_personal/</clickshot>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.halifax-online\.co\.uk/personal/a/account_overview_personal/</clickshot>
+      <clickshot clicks="30" onget="1" onpost="1" type="allow" xrange="3000" yrange="2000">^https://secure\.bankofscotland\.co\.uk/personal/a/account_overview_personal/</clickshot>
+    </clickshots>
+    <timestamp>2018-06-12T10:52:10+00:00</timestamp>
+  </config>
+  <c2>
+    <host>
+      <port>3889</port>
+      <ip>45.76.121.12</ip>
+    </host>
+  </c2>
+</settings>
