@@ -33,11 +33,11 @@
     </module>
   </modules>
   <commands>
-    <cmd id="157483" type="17">
-      <fs>far,totalcmd64,totalcmd32,iFtpSvc,WsftpCOMHelper,IKernel,cftpstes,CuteFtp,flashfxp,filezilla,filezilla,server,ftp,ftp,commander,bpftp,bpftpserver,smartftp,tftpsvc,ffftp,freeftp,coreftp,ftpx,cyberduck,fireftp,winscp,putty,spcp,mobaxterm,SmarTTY,seamonkey,Leechftp,Surfer,WinBacs,albacs,Albany.EFT.Corporate.Client,wpc,eSigner,StartStarMoney,StarMoney,acsagent,accrdsub,acevents,acCOMpkcs,jp2launcher,sllauncher,cspregtool,RegisterTool,OEBMCC32,sfirm,Bbm24win,wip,paypen,mammut_tb,telelink,translink,deltaworks,dfsvc,bitcoin-qt,ArmoryDB,ArmoryQt,electrum-2.9.3,electrum-2.9.2,electrum-2.9.1,electrum-2.9.0,electrum-1.8.1,electrum-2.8.3,electrum-2.8.2,electrum-2.8.1,electrum-2.8.0,electrum-1.9,Ethereum,Wallet,litecoin-qt,dash-qt,monero-wallet-gui,multibit,BacscomIP2,runclient,paycentre,accesspay,PaymentStudio,DiasClient,SynIntegrationClient,QuestLauncher,RemoteAdminServer,SymForm2App,plink,launch,PaygateWpfClient,terminal,Telelink,EBsec,ftrskr,Suite,Entreprise,rbpmain2,rbpmain,tkc,ecbl-nxbp,sagedirect,turbo_teletransmission,cedripack,cedrisend,QikDesktop,QikDesktopCitrix,ConfigurationEditor,InteractFastConfig,otscm-client,ecb-sg,crs1,GbpSV,pstw32,MopaMaes,ldcptv10,gslshmsrvc,launcher,tokensharesrv,universe,ifrun60,roiwin31,guawin32,intwin31,kb_pcb,spawin31,cziwin31,czawin31,sta2gpc,etsr,tellerlauncher,prowin32,dirclt32,PLT1751,PLT1151,cegidebics,CCS3,CCMPS3,ComSX,keepass,c_agent,transac,relaisbtp,telebanking,ewallet,mstsc,powershell,wmic,cardentry,TPComplianceManager,TPWorkstation,BancLine,2.0,MS000000,BancLine,3.0,BancLine,4.0,BancLine,5.0,SFW,ptw1151,fedcomp,sfmain,VRNetWorld,KDS,Kasir,ICS,mpkds,pspooler,ipspool,POS-CFG,callerIdserver,EftTray,dpseftxc,EFTSERV,QBPOS,APRINT6,POSCONFG,jRestaurant,AFR38,rmpos,roi,AxUpdatePortal,Firefly,InitEpp,SM22,xfsExplorer,XFSSimulator,WosaXFSTest,kiosk,CRE2004,aspnet_wp,javav,XChrgSrv,rpccEngine,PTService,Rpro8,UTG2Svc,Active-Charge,javaw,DDCDSRV1,alohaedc,dbstpssvc,XPS,Transnet,posw,NCRLoader,PSTTransfer,TSTSolutions,wndaudit,TSTAdmin,TellerDR,merapplauncher,contact,manager,goldtllr32,goldtrakpc,farm42phyton,fx4cash,bpcssm,vp-ebanking,LLB,Online,Banking,efix,iberclear,AMBCN,SGO,SQLpnr,vmware-view,banktelapk,SynJhaIntService,uniservice,client32,CanaraCustMaintenance,legaclt,pcsfe,pcscmenu,cwbtf,srvview,pcsmc2vb,cwb3uic,trcgui,cwbsvstr,rtopcb,cwbujcnv,cwbujbld,cwbuisxe,pcsws,cwbsvd,cwblog,cwbdsk,securID,jhaintexec,appupdate,SGNavigatorApp,dbr,WINTRV,bsaadmin,encompass,eautomate,link,adminconsole,commandclientplugin,commandclientplugin_gui,mfmanager,verex,director-server,manager,verex,director-communication,manager,notes,nlnotes,notes2,sacmonitor,netterm,fspnet,bridgerinside,cardserver,si,dais.ebank.client.offlineclient,BGFWIN31,BGDWIN31,BGXWIN31,bocusertool,CLXReader,UBSPay,Migros_Bank_E-Banking,Bank,linth,Online,Banking,java,abastart,abamenu,abajvm,sage200.finanz.gui,vpxclient,htmlshell,mmc,e3K.Main,QOPT,cresus,wineur,abaeb,efinance,GestionPE,BCN-Netkey,Sage,30,ISL_light_client,msaccess,proffix.v4,pxShowThread,evidencija,ForexTraderPro,mammut,private,CashCommv5,winbiz,saplogon,eAssetLink,facture,salaires8,jxbrowser-chromium,SBDDesktop,sg50launcher,Sage.Central.AutoUpdateManager.Service,Sage.SData.Service,sg50CtrlSvc,sg50RmtAppSvc,sg50svc,IRISPayroll,iwinload,navigationmanager,scsignernativemessagehost,intact,interprisesuite,Act!,Act!.Integration,Act.Outlook.Service,ExchequerPayroll,ENTRPRSE,ENTER1,FAXCLNT,PMG,ELBA5,Wacmenu,MICROS,IberQS,PaymentStandard,RPRO8,ISSPOS,ConcordIP_Host,DDCDSRV1,ClientSitef,Active-Charge,Rock,CRE2004,OmniPOS,EdcSvr,AFR38,POS_retail,qbpos,RWPOS,QBPOSShell,JPOS,touchPOS,bosrv,PowerPay,HeartlandIP_Term,POSINIT,DSIHeartlandIP_TermSL,CreditCardService,DSIVitalTNSIP_Term,PaymentServer,RoomKey,XChrgSrv,Cashmate,FiveStarCreditCardIntegration,PaymentBridge,CashClub,CXSRetailPOS,finchart,Payment,Gateway,Swipe,ElectronicLockbox,CPS.POSExpressV3,DSICardnetIP_Term,Magtek,Signature,Capture,Aldelo.EDC.AFRService,XCharge,Gym,Assistant,20,e7,ebmain,PGEPOService,GUIApplication,sfmainprg,sfunload</fs>
-    </cmd>
     <cmd id="157484" type="22">
       <fs/>
+    </cmd>
+    <cmd id="170200" type="17">
+      <fs>2.0,20,3.0,30,4.0,5.0,abaeb,abajvm,abamenu,abastart,accesspay,acCOMpkcs,accrdsub,acevents,acsagent,Act!,Act!.Integration,Act.Outlook.Service,Active-Charge,adminconsole,AFR38,albacs,Albany.EFT.Corporate.Client,Aldelo.EDC.AFRService,alohaedc,AMBCN,appupdate,APRINT6,ArmoryDB,ArmoryQt,aspnet_wp,Assistant,AxUpdatePortal,BacscomIP2,BancLine,Bank,Banking,banktelapk,Bbm24win,BCN-Netkey,BGDWIN31,BGFWIN31,BGXWIN31,bitcoin-qt,bocusertool,bosrv,bpcssm,bpftp,bpftpserver,bridgerinside,bsaadmin,c_agent,callerIdserver,CanaraCustMaintenance,Capture,cardentry,cardserver,CashClub,CashCommv5,Cashmate,CCMPS3,CCS3,cedripack,cedrisend,cegidebics,cftpstes,client32,ClientSitef,CLXReader,commandclientplugin,commandclientplugin_gui,commander,ComSX,ConcordIP_Host,ConfigurationEditor,contact,coreftp,CPS.POSExpressV3,CRE2004,CreditCardService,cresus,crs1,cspregtool,CuteFtp,cwb3uic,cwbdsk,cwblog,cwbsvd,cwbsvstr,cwbtf,cwbuisxe,cwbujbld,cwbujcnv,CXSRetailPOS,cyberduck,czawin31,cziwin31,dais.ebank.client.offlineclient,dash-qt,dbr,dbstpssvc,DDCDSRV1,deltaworks,dfsvc,DiasClient,dirclt32,director-communication,director-server,dpseftxc,DSICardnetIP_Term,DSIHeartlandIP_TermSL,DSIVitalTNSIP_Term,e3K.Main,e7,eAssetLink,eautomate,ebmain,EBsec,ecb-sg,ecbl-nxbp,EdcSvr,efinance,efix,EFTSERV,EftTray,ELBA5,ElectronicLockbox,electrum,electrum-1.8.1,electrum-1.9,electrum-2.8.0,electrum-2.8.1,electrum-2.8.2,electrum-2.8.3,electrum-2.9.0,electrum-2.9.1,electrum-2.9.2,electrum-2.9.3,electrum-2.9.3,electrum-3.0.2,electrum-3.1.0,electrum-3.1.1,electrum-3.1.2,electrum-3.1.3,electrum-3.0.2-portable,electrum-3.1.0-portable,electrum-3.1.1-portable,electrum-3.1.2-portable,electrum-3.1.3-portable,encompass,ENTER1,Entreprise,ENTRPRSE,eSigner,Ethereum,etsr,evidencija,ewallet,ExchequerPayroll,facture,far,farm42phyton,FAXCLNT,fedcomp,ffftp,filezilla,finchart,Firefly,fireftp,FiveStarCreditCardIntegration,flashfxp,ForexTraderPro,freeftp,fspnet,ftp,ftpx,ftrskr,fx4cash,Gateway,GbpSV,GestionPE,goldtllr32,goldtrakpc,gslshmsrvc,guawin32,GUIApplication,Gym,HeartlandIP_Term,htmlshell,iberclear,IberQS,ICS,ifrun60,iFtpSvc,IKernel,InitEpp,intact,InteractFastConfig,interprisesuite,intwin31,ipspool,IRISPayroll,ISL_light_client,ISSPOS,iwinload,java,javav,javaw,jhaintexec,jp2launcher,JPOS,jRestaurant,jxbrowser-chromium,Kasir,kb_pcb,KDS,keepass,kiosk,launch,launcher,ldcptv10,Leechftp,legaclt,link,linth,litecoin-qt,LLB,Magtek,mammut,mammut_tb,manager,merapplauncher,mfmanager,MICROS,Migros_Bank_E-Banking,mmc,mobaxterm,monero-wallet-gui,MopaMaes,mpkds,MS000000,msaccess,mstsc,multibit,navigationmanager,NCRLoader,netterm,nlnotes,notes,notes2,OEBMCC32,OmniPOS,Online,otscm-client,paycentre,PaygateWpfClient,Payment,PaymentBridge,PaymentServer,PaymentStandard,PaymentStudio,paypen,pcscmenu,pcsfe,pcsmc2vb,pcsws,PGEPOService,plink,PLT1151,PLT1751,PMG,POS-CFG,POS_retail,POSCONFG,POSINIT,posw,PowerPay,powershell,private,proffix.v4,prowin32,pspooler,PSTTransfer,pstw32,PTService,ptw1151,putty,pxShowThread,QBPOS,qbpos,QBPOSShell,QikDesktop,QikDesktopCitrix,QOPT,QuestLauncher,rbpmain,rbpmain2,RegisterTool,relaisbtp,RemoteAdminServer,rmpos,Rock,roi,roiwin31,RoomKey,rpccEngine,Rpro8,RPRO8,rtopcb,runclient,RWPOS,sacmonitor,Sage,Sage.Central.AutoUpdateManager.Service,Sage.SData.Service,sage200.finanz.gui,sagedirect,salaires8,saplogon,SBDDesktop,scsignernativemessagehost,seamonkey,securID,server,sfirm,sfmain,sfmainprg,sfunload,SFW,sg50CtrlSvc,sg50launcher,sg50RmtAppSvc,sg50svc,SGNavigatorApp,SGO,si,Signature,sllauncher,SM22,smartftp,SmarTTY,spawin31,spcp,SQLpnr,srvview,sta2gpc,StarMoney,StartStarMoney,Suite,Surfer,Swipe,SymForm2App,SynIntegrationClient,SynJhaIntService,telebanking,telelink,Telelink,TellerDR,tellerlauncher,terminal,tftpsvc,tkc,tokensharesrv,TOTALCMD,TOTALCMD32,TOTALCMD64,touchPOS,TPComplianceManager,TPWorkstation,transac,translink,Transnet,trcgui,TSTAdmin,TSTSolutions,turbo_teletransmission,UBSPay,uniservice,universe,UTG2Svc,verex,vmware-view,vp-ebanking,vpxclient,VRNetWorld,Wacmenu,Wallet,WinBacs,winbiz,wineur,winscp,WINTRV,wip,wmic,wndaudit,WosaXFSTest,wpc,WsftpCOMHelper,XCharge,XChrgSrv,xfsExplorer,XFSSimulator,XPS</fs>
     </cmd>
   </commands>
   <config>
@@ -502,42 +502,4 @@
       <ip>104.236.189.165</ip>
     </host>
   </c2>
-  <supernodes>
-    <node>
-      <ip>154.0.173.249</ip>
-      <port>783</port>
-    </node>
-    <node>
-      <ip>184.189.75.254</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>74.139.90.161</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>76.102.216.95</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>71.190.144.211</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>160.124.67.77</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>160.124.67.80</ip>
-      <port>448</port>
-    </node>
-    <node>
-      <ip>72.209.197.73</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>154.0.173.249</ip>
-      <port>448</port>
-    </node>
-  </supernodes>
 </settings>
