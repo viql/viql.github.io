@@ -287,11 +287,7 @@
   </c2>
   <supernodes>
     <node>
-      <ip>70.34.1.232</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>51.52.205.221</ip>
+      <ip>185.236.77.228</ip>
       <port>443</port>
     </node>
     <node>
@@ -299,59 +295,7 @@
       <port>443</port>
     </node>
     <node>
-      <ip>90.42.150.216</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>91.84.15.17</ip>
-      <port>443</port>
-    </node>
-    <node>
       <ip>77.105.43.209</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>195.123.214.147</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>92.27.84.44</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>82.27.58.162</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>185.236.77.228</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>174.111.41.39</ip>
-      <port>8443</port>
-    </node>
-    <node>
-      <ip>89.242.6.199</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>87.114.93.29</ip>
-      <port>8443</port>
-    </node>
-    <node>
-      <ip>69.14.75.158</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>132.204.222.210</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>24.234.234.212</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>82.45.232.190</ip>
       <port>443</port>
     </node>
     <node>
@@ -359,11 +303,35 @@
       <port>443</port>
     </node>
     <node>
-      <ip>80.235.149.254</ip>
+      <ip>81.133.199.158</ip>
       <port>443</port>
     </node>
     <node>
-      <ip>80.2.118.90</ip>
+      <ip>174.111.41.39</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>87.114.93.29</ip>
+      <port>8443</port>
+    </node>
+    <node>
+      <ip>51.52.205.221</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>70.34.1.232</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>89.242.6.199</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>132.204.222.210</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>69.14.75.158</ip>
       <port>443</port>
     </node>
     <node>
@@ -371,11 +339,51 @@
       <port>443</port>
     </node>
     <node>
-      <ip>81.133.199.158</ip>
+      <ip>92.27.84.44</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>24.234.234.212</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>80.2.118.90</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>80.235.149.254</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>91.84.15.17</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>82.45.232.190</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>90.42.150.216</ip>
       <port>443</port>
     </node>
     <node>
       <ip>81.179.6.85</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>82.9.114.19</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>82.27.58.162</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>195.123.214.147</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>62.212.98.188</ip>
       <port>443</port>
     </node>
     <node>
@@ -384,10 +392,6 @@
     </node>
     <node>
       <ip>207.47.95.202</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>82.9.114.19</ip>
       <port>443</port>
     </node>
     <node>
@@ -404,10 +408,6 @@
     </node>
     <node>
       <ip>24.216.227.204</ip>
-      <port>443</port>
-    </node>
-    <node>
-      <ip>62.212.98.188</ip>
       <port>443</port>
     </node>
   </supernodes>
