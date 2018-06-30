@@ -501,4 +501,22 @@
       <ip>104.236.189.165</ip>
     </host>
   </c2>
+  <supernodes>
+    <node>
+      <ip>188.213.31.152</ip>
+      <port>443</port>
+    </node>
+    <node>
+      <ip>188.213.31.152</ip>
+      <port>783</port>
+    </node>
+    <node>
+      <ip>154.0.173.249</ip>
+      <port>783</port>
+    </node>
+    <node>
+      <ip>154.0.173.249</ip>
+      <port>448</port>
+    </node>
+  </supernodes>
 </settings>
